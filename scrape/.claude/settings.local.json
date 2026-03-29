@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.lowermsfoundation.org)",
+      "Bash(bash /c/Users/scott/lmrf-scrape/download-images.sh)",
+      "Bash(ls:*)",
+      "Bash(curl -sL -o test.jpg \"https://images.squarespace-cdn.com/content/v1/5ad8adafa9e0285e8518827c/1524249983765-5Q9I58KEUQX9KQIG2FZH/8JR_5602.jpg\")",
+      "Bash(/c/Python314/python -c \"\nimport re, os, glob\n\nos.chdir\\('C:/Users/scott/lmrf-scrape/site'\\)\n\nhtml_files = glob.glob\\('*.html'\\) + glob.glob\\('blog/*.html'\\)\nimage_refs = set\\(\\)\n\nfor f in html_files:\n    with open\\(f, 'r', encoding='utf-8'\\) as fh:\n        content = fh.read\\(\\)\n    matches = re.findall\\(r'\\(?:images/|\\\\.\\\\.\\\\/images/\\)\\([^\\\\x27\\\\\"\\\\\\)\\\\s]+\\)', content\\)\n    for m in matches:\n        image_refs.add\\(m\\)\n\ndisk_files = set\\(\\)\nfor f in os.listdir\\('images'\\):\n    if os.path.isfile\\(os.path.join\\('images', f\\)\\):\n        disk_files.add\\(f\\)\n\nprint\\('=== REFERENCED IMAGE FILENAMES \\(%d\\) ===' % len\\(image_refs\\)\\)\nfor r in sorted\\(image_refs\\):\n    print\\('  ', r\\)\n\nprint\\(\\)\nprint\\('=== FILES ON DISK \\(%d\\) ===' % len\\(disk_files\\)\\)\n\nprint\\(\\)\nreferenced_but_missing = image_refs - disk_files\nprint\\('=== REFERENCED IN HTML BUT MISSING ON DISK \\(%d\\) ===' % len\\(referenced_but_missing\\)\\)\nfor m in sorted\\(referenced_but_missing\\):\n    print\\('  MISSING:', m\\)\n\nprint\\(\\)\non_disk_not_referenced = disk_files - image_refs\nprint\\('=== ON DISK BUT NOT REFERENCED IN ANY HTML \\(%d\\) ===' % len\\(on_disk_not_referenced\\)\\)\nfor m in sorted\\(on_disk_not_referenced\\):\n    print\\('  UNUSED:', m\\)\n\")",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(python mirror.py)",
+      "Bash(python:*)",
+      "Bash(npx puppeteer:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm list:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer-core)",
+      "Bash(node:*)",
+      "Bash(cd:*)",
+      "Bash(__NEW_LINE_c50d147e7378f14c__ python:*)",
+      "Bash(curl:*)",
+      "Bash(gsutil rsync:*)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gsutil rsync -r -d /c/Users/scott/lmrf-scrape/rendered-site/ gs://lowermsfoundation.org)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gsutil ls gs://lowermsfoundation.org/)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud run services describe lmrf-website --region=us-central1 --format=\"yaml\\(spec.template.spec.containers\\)\" 2>/dev/null)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud compute url-maps describe lmrf-website-urlmap --format=\"yaml\\(defaultService, pathMatchers, hostRules\\)\" 2>/dev/null)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud builds submit --tag gcr.io/balmy-limiter-491013-a8/lmrf-website .)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud run deploy lmrf-website --image=gcr.io/balmy-limiter-491013-a8/lmrf-website --region=us-central1 --allow-unauthenticated --port=8080 2>&1)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud compute ssl-certificates list 2>&1)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud compute ssl-certificates describe lmrf-website-cert --format=\"yaml\\(managed\\)\" 2>&1)",
+      "Bash(nslookup:*)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud run deploy lmrf-website --image=gcr.io/balmy-limiter-491013-a8/lmrf-website --region=us-central1 --allow-unauthenticated --port=8080)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud compute url-maps invalidate-cdn-cache lmrf-website-urlmap --path=\"/*\" 2>&1)",
+      "Bash(CLOUDSDK_PYTHON=\"C:/Users/scott/AppData/Local/Programs/Python/Python312-arm64/python.exe\" gcloud compute url-maps invalidate-cdn-cache lmrf-website-urlmap --path=\"/*\")"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+*.tmp
+*.log
+
+# Test screenshots from scrape folder
+scrape/*.png
+scrape/*.jpg

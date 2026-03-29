@@ -1,0 +1,30 @@
+LMRF Site Scrub Report
+Date: 2026-03-24T23:52:20.710Z
+Site: https://www.lowermsfoundation.org
+
+Total issues: 24
+
+ISSUE: [home][desktop] 4 broken images: https://www.lowermsfoundation.org/images/8JR_5602.jpg, https://www.lowermsfoundation.org/images/5JR_6267.JPG, https://www.lowermsfoundation.org/images/8JR_5655.JPG
+ISSUE: [home][desktop] Desktop header not visible
+ISSUE: [home][mobile] 3 broken images: https://www.lowermsfoundation.org/images/5JR_6267.JPG, https://www.lowermsfoundation.org/images/8JR_5655.JPG, https://www.lowermsfoundation.org/images/5JR_2978.JPG
+ISSUE: [who-we-are][desktop] 2 broken images: https://www.lowermsfoundation.org/images/IMG_0771.jpg, https://www.lowermsfoundation.org/images/IMG_0197.JPG
+ISSUE: [who-we-are][desktop] Desktop header not visible
+ISSUE: [who-we-are][mobile] 8 broken images: https://www.lowermsfoundation.org/images/IMG_2287.JPG, https://www.lowermsfoundation.org/images/IMG_0608.JPG, https://www.lowermsfoundation.org/images/IMG_9714.jpeg
+ISSUE: [our-programs][desktop] Desktop header not visible
+ISSUE: [summer-camps][desktop] Desktop header not visible
+ISSUE: [river-stewards][desktop] Desktop header not visible
+ISSUE: [get-involved][desktop] 2 broken images: https://www.lowermsfoundation.org/images/8JR_5655_1.jpeg, https://www.lowermsfoundation.org/images/5JR_3820.JPG
+ISSUE: [get-involved][desktop] Desktop header not visible
+ISSUE: [get-involved][mobile] 2 broken images: https://www.lowermsfoundation.org/images/8JR_5655_1.jpeg, https://www.lowermsfoundation.org/images/5JR_3820.JPG
+ISSUE: [calendar][desktop] Desktop header not visible
+ISSUE: [blog][desktop] Desktop header not visible
+ISSUE: [contact][desktop] Desktop header not visible
+ISSUE: [donate][desktop] Desktop header not visible
+ISSUE: [camp-application][desktop] Desktop header not visible
+ISSUE: [camp-application][mobile] Mobile menu does NOT open on click
+ISSUE: [delta-day-camp][desktop] Desktop header not visible
+ISSUE: [delta-day-camp][mobile] Mobile menu does NOT open on click
+ISSUE: [volunteer][desktop] Desktop header not visible
+ISSUE: [volunteer][desktop] Empty button: "Fill Out a Volunteer Survey"
+ISSUE: [volunteer][mobile] Empty button: "Fill Out a Volunteer Survey"
+ISSUE: [advocate][desktop] Desktop header not visible

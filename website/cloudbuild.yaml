@@ -1,0 +1,18 @@
+steps:
+  # Step 1: Copy static files from GCS bucket
+  - name: 'gcr.io/cloud-builders/gsutil'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - 'mkdir -p site && gsutil -m rsync -r gs://lowermsfoundation.org site/'
+
+  # Step 2: Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/balmy-limiter-491013-a8/lmrf-website', '.']
+
+  # Step 3: Push to GCR
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/balmy-limiter-491013-a8/lmrf-website']
+
+images:
+  - 'gcr.io/balmy-limiter-491013-a8/lmrf-website'
