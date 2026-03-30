@@ -143,16 +143,33 @@ function buildNotificationHtml(data) {
 </div>`;
 }
 
-async function sendNotification(data) {
-  const auth = await getGmailAuth();
-  const gmail = google.gmail({ version: "v1", auth });
+function buildConfirmationHtml(data) {
   const name = `${sanitize(data.firstName)} ${sanitize(data.lastName)}`;
-  const subject = `New Canoe Trip Sign-Up: ${name} — ${sanitize(data.tripDate)}`;
-  const html = buildNotificationHtml(data);
+  const tripDate = sanitize(data.tripDate);
+  const participantCount = data.participants ? data.participants.length : 1;
+  return `
+<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
+  <h2 style="color:#2c5f2d;">You're All Set!</h2>
+  <p>Thank you for signing up for the <strong>Community Canoe Trip</strong>! We're excited to have you join us on the river.</p>
+  <p><strong>Trip Date:</strong> ${tripDate}<br>
+  <strong>Participants:</strong> ${participantCount}</p>
+  <p>We'll confirm your reservation via email. Please remember:</p>
+  <ul style="color:#444;line-height:1.8;">
+    <li>Reservations required — 18 max, first come first served</li>
+    <li>Pack water bottles, snacks, sun/bug protection, and shoes that can get wet</li>
+    <li>Pack electronics in dry bags or zip lock bags</li>
+    <li>Dress for possible rainy weather</li>
+  </ul>
+  <p>Questions? Contact John Ruskey at (662) 902-7841 or Ceili Hale at (601) 918-6810.</p>
+  <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+  <p style="font-size:12px;color:#999;">Community Canoe Trips are made possible by the Lower Mississippi River Foundation.<br>PO Box 127, Helena, AR 72342 | (870) 228-2421<br><a href="https://www.lowermsfoundation.org/donate" style="color:#d48b3e;">Support our mission with a donation</a></p>
+</div>`;
+}
 
+async function sendEmail(gmail, to, subject, html) {
   const messageParts = [
     `From: LMRF Canoe Trips <${SENDER_EMAIL}>`,
-    `To: ${NOTIFY_EMAIL}`,
+    `To: ${to}`,
     `Subject: ${subject}`,
     "MIME-Version: 1.0",
     'Content-Type: text/html; charset="UTF-8"',
@@ -169,7 +186,31 @@ async function sendNotification(data) {
     userId: "me",
     requestBody: { raw },
   });
-  console.log(`Notification email sent for ${name}`);
+}
+
+async function sendNotification(data) {
+  const auth = await getGmailAuth();
+  const gmail = google.gmail({ version: "v1", auth });
+  const name = `${sanitize(data.firstName)} ${sanitize(data.lastName)}`;
+
+  // 1. Internal notification
+  await sendEmail(
+    gmail,
+    NOTIFY_EMAIL,
+    `New Canoe Trip Sign-Up: ${name} — ${sanitize(data.tripDate)}`,
+    buildNotificationHtml(data),
+  );
+  console.log(`Internal notification sent for ${name}`);
+
+  // 2. Confirmation to the person who signed up
+  const contactEmail = sanitize(data.email);
+  await sendEmail(
+    gmail,
+    contactEmail,
+    "You're All Set! - Community Canoe Trip",
+    buildConfirmationHtml(data),
+  );
+  console.log(`Confirmation email sent to ${contactEmail}`);
 }
 
 // Entry point

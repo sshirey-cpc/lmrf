@@ -142,22 +142,37 @@ function buildNotificationHtml(data) {
 </div>`;
 }
 
-async function sendNotification(data) {
-  const auth = await getGmailAuth();
-  const gmail = google.gmail({ version: "v1", auth });
+function buildConfirmationHtml(data) {
   const name = `${sanitize(data.firstName)} ${sanitize(data.lastName)}`;
-  const subject = `New Adventure Camp Application: ${name}`;
-  const html = buildNotificationHtml(data);
+  const paypalUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7F349QJ9M274Y&item_name=Adventure+Camp+Deposit+-+%2425";
+  return `
+<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
+  <h2 style="color:#2c5f2d;">Welcome to the Adventure!</h2>
+  <p>Thank you for applying to the <strong>Mississippi River Adventure Camp</strong>! We're excited that ${name} wants to join us on the river this summer.</p>
+  <p>We've received your application and will be in touch soon with next steps.</p>
+  <p>To secure your spot, please pay the <strong>$25 deposit</strong> within 30 days:</p>
+  <p style="text-align:center;margin:24px 0;">
+    <a href="${paypalUrl}" style="display:inline-block;padding:14px 36px;background:#d48b3e;color:#fff;text-decoration:none;border-radius:25px;font-size:16px;font-weight:600;">Pay $25 Deposit via PayPal</a>
+  </p>
+  <p>Questions? Contact Abe Hudson at 662-822-9984 or <a href="mailto:info@lowermsfoundation.org" style="color:#d48b3e;">info@lowermsfoundation.org</a></p>
+  <hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+  <p style="font-size:12px;color:#999;">Lower Mississippi River Foundation<br>PO Box 127, Helena, AR 72342<br>(870) 228-2421</p>
+</div>`;
+}
 
+async function sendEmail(gmail, to, cc, subject, html) {
   const messageParts = [
     `From: LMRF Adventure Camp <${SENDER_EMAIL}>`,
-    `To: ${NOTIFY_EMAIL}`,
+    `To: ${to}`,
+  ];
+  if (cc) messageParts.push(`Cc: ${cc}`);
+  messageParts.push(
     `Subject: ${subject}`,
     "MIME-Version: 1.0",
     'Content-Type: text/html; charset="UTF-8"',
     "",
     html,
-  ];
+  );
   const raw = Buffer.from(messageParts.join("\r\n"))
     .toString("base64")
     .replace(/\+/g, "-")
@@ -168,7 +183,34 @@ async function sendNotification(data) {
     userId: "me",
     requestBody: { raw },
   });
-  console.log(`Notification email sent for ${name}`);
+}
+
+async function sendNotification(data) {
+  const auth = await getGmailAuth();
+  const gmail = google.gmail({ version: "v1", auth });
+  const name = `${sanitize(data.firstName)} ${sanitize(data.lastName)}`;
+
+  // 1. Internal notification to info@
+  await sendEmail(
+    gmail,
+    NOTIFY_EMAIL,
+    null,
+    `New Adventure Camp Application: ${name}`,
+    buildNotificationHtml(data),
+  );
+  console.log(`Internal notification sent for ${name}`);
+
+  // 2. Confirmation to parent (CC student if email provided)
+  const parentEmail = sanitize(data.parentEmail);
+  const studentEmail = sanitize(data.studentEmail);
+  await sendEmail(
+    gmail,
+    parentEmail,
+    studentEmail || null,
+    "Welcome to the Adventure! - Mississippi River Adventure Camp",
+    buildConfirmationHtml(data),
+  );
+  console.log(`Confirmation email sent to ${parentEmail}${studentEmail ? " (cc: " + studentEmail + ")" : ""}`);
 }
 
 // Entry point
