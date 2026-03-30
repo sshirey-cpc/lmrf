@@ -41,14 +41,56 @@ function getCorsHeaders(origin) {
 }
 
 async function getGmailAuth() {
-  // Use Application Default Credentials with domain-wide delegation
-  // (same approach as paypal-sync function)
-  const auth = new google.auth.GoogleAuth({
-    scopes: ["https://www.googleapis.com/auth/gmail.send"],
-  });
+  // Domain-wide delegation from Cloud Functions (Gen2/Cloud Run):
+  // Use IAM credentials API to sign a JWT, then exchange for token
+  const { GoogleAuth } = require("google-auth-library");
+  const auth = new GoogleAuth();
   const client = await auth.getClient();
-  client.subject = SENDER_EMAIL;
-  return client;
+  const sa = client.email || (await auth.getCredentials()).client_email;
+
+  // Sign a JWT with subject claim using IAM signJwt
+  const now = Math.floor(Date.now() / 1000);
+  const claim = JSON.stringify({
+    iss: sa,
+    sub: SENDER_EMAIL,
+    scope: "https://www.googleapis.com/auth/gmail.send",
+    aud: "https://oauth2.googleapis.com/token",
+    iat: now,
+    exp: now + 3600,
+  });
+
+  // Call IAM signJwt API
+  const iamUrl = `https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/${sa}:signJwt`;
+  const accessToken = await client.getAccessToken();
+  const signRes = await fetch(iamUrl, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${accessToken.token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ payload: claim }),
+  });
+  const signData = await signRes.json();
+
+  if (!signData.signedJwt) {
+    throw new Error(`JWT signing failed: ${JSON.stringify(signData)}`);
+  }
+
+  // Exchange signed JWT for access token
+  const tokenRes = await fetch("https://oauth2.googleapis.com/token", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=${signData.signedJwt}`,
+  });
+  const tokenData = await tokenRes.json();
+
+  if (!tokenData.access_token) {
+    throw new Error(`Token exchange failed: ${JSON.stringify(tokenData)}`);
+  }
+
+  const oauth2 = new google.auth.OAuth2();
+  oauth2.setCredentials({ access_token: tokenData.access_token });
+  return oauth2;
 }
 
 function sanitize(val) {
