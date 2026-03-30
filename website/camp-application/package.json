@@ -1,0 +1,10 @@
+{
+  "name": "lmrf-camp-application",
+  "version": "1.0.0",
+  "description": "LMRF camp application form handler — stores in BigQuery and sends email notification",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.0.0",
+    "googleapis": "^130.0.0"
+  }
+}
