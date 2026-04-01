@@ -117,9 +117,14 @@
     
       
         
-          <a href="who-we-are.html" class="Mobile-overlay-nav-item">
-            Who We Are
-          </a>
+          <button class="Mobile-overlay-nav-item Mobile-overlay-nav-item--folder" data-controller-folder-toggle="who-we-are">
+            <span class="Mobile-overlay-nav-item--folder-label">Who We Are</span>
+          </button>
+          <div class="mobile-subnav">
+            <a href="who-we-are.html">Mission</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="board-members.html">Board Members</a>
+          </div>
         
       
     
@@ -305,7 +310,14 @@
             <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
                 
   <div class="Header-nav-inner">
-    <a href="index.html" class="Header-nav-item" data-test="template-nav">Home</a><a href="who-we-are.html" class="Header-nav-item" data-test="template-nav">Who We Are</a><span class="Header-nav-item Header-nav-item--folder">
+    <a href="index.html" class="Header-nav-item" data-test="template-nav">Home</a><span class="Header-nav-item Header-nav-item--folder">
+      <a href="who-we-are.html" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch" data-controllers-bound="HeaderNavFolderTouch">Who We Are</a>
+      <span class="Header-nav-folder">
+        <a href="who-we-are.html" class="Header-nav-folder-item" data-test="template-nav">Mission</a>
+        <a href="our-story.html" class="Header-nav-folder-item" data-test="template-nav">Our Story</a>
+        <a href="board-members.html" class="Header-nav-folder-item" data-test="template-nav">Board Members</a>
+      </span>
+    </span><span class="Header-nav-item Header-nav-item--folder">
 
       <a href="our-programs.html" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch" data-controllers-bound="HeaderNavFolderTouch">Programs</a>
 

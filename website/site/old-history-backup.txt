@@ -1,0 +1,28 @@
+<h2 style="white-space:pre-wrap;">Our History</h2><p class="" style="white-space:pre-wrap;">John Ruskey has been running canoe trips on the&nbsp; Mississippi River for over 20 years. &nbsp;In that time he has seen the power the river has to change lives and also how disconnected the world is from this powerful natural resource. &nbsp;In 2011, he founded the Lower Mississippi River Foundation to help connect more people to the Mighty Mississippi. He led the way in the creation of our first major project, the Rivergator, a paddler's guide to the Lower Mississippi. &nbsp;The Rivergator offers a mile by mile description of the Lower Miss and has helped to promote the river as a destination for recreation. Over 200,000 people access the Rivergator each year.</p><p class="" style="white-space:pre-wrap;">Today, we continue to promote recreation on the river but have expanded our programs to include educational classes, youth programming and opportunities to give back to the river that connects us all.</p><p class="" style="white-space:pre-wrap;">&nbsp;</p><p class="" style="white-space:pre-wrap;">&nbsp;</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block website-component-block sqs-block-website-component sqs-block-spacer spacer-block sized vsize-1" data-block-css="[&quot;css/website.components.spacer.styles.css&quot;]" data-block-scripts="[&quot;#&quot;]" data-block-type="1337" data-definition-name="website.components.spacer" id="block-yui_3_17_2_1_1525115089521_9443"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-8 span-8"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1525115089521_20747"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content="">
+  

@@ -157,11 +157,55 @@ def upsert_donor(bq_client, row):
 
 def get_gmail_service():
     import google.auth
-    credentials, project = google.auth.default(
-        scopes=["https://www.googleapis.com/auth/gmail.send"]
+    import google.auth.transport.requests
+    import json as _json
+    import time as _time
+
+    credentials, project = google.auth.default()
+    auth_request = google.auth.transport.requests.Request()
+    credentials.refresh(auth_request)
+
+    # Get the service account email
+    sa_email = credentials.service_account_email
+
+    # Build JWT claim with subject for domain-wide delegation
+    now = int(_time.time())
+    claim = _json.dumps({
+        "iss": sa_email,
+        "sub": SENDER_EMAIL,
+        "scope": "https://www.googleapis.com/auth/gmail.send",
+        "aud": "https://oauth2.googleapis.com/token",
+        "iat": now,
+        "exp": now + 3600,
+    })
+
+    # Sign JWT using IAM credentials API
+    iam_url = f"https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/{sa_email}:signJwt"
+    import requests as _requests
+    sign_resp = _requests.post(
+        iam_url,
+        headers={"Authorization": f"Bearer {credentials.token}", "Content-Type": "application/json"},
+        json={"payload": claim},
     )
-    delegated = credentials.with_subject(SENDER_EMAIL)
-    return build("gmail", "v1", credentials=delegated)
+    signed_jwt = sign_resp.json().get("signedJwt")
+    if not signed_jwt:
+        raise Exception(f"JWT signing failed: {sign_resp.text}")
+
+    # Exchange for access token
+    token_resp = _requests.post(
+        "https://oauth2.googleapis.com/token",
+        data={
+            "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+            "assertion": signed_jwt,
+        },
+    )
+    access_token = token_resp.json().get("access_token")
+    if not access_token:
+        raise Exception(f"Token exchange failed: {token_resp.text}")
+
+    from google.oauth2.credentials import Credentials as OAuth2Credentials
+    creds = OAuth2Credentials(token=access_token)
+    return build("gmail", "v1", credentials=creds)
 
 
 def send_email(service, to_email, subject, body_text):
