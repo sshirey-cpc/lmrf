@@ -1,0 +1,8 @@
+TITLE: Whistle Signals
+PATH: /paddlers-guide/safety/whistle-signals
+ID: 2505
+STATUS: publish
+DATE: 2021-03-26 15:50:22
+============================================================
+
+Whistle Signals (accepted international whistle signals) In some situations paddlers might need to signal each other immediately and the whistle hanging on your life jacket might be the best way to do it. Especially if you are too far to shout, or nearby towboats are too loud. Here is the system: One blow: ATTENTION -- "Attention!" or "Look this Way!" Two blows: STOP -- "I need to stop" or "Bring the group to a stop" Three Blows: EMERGENCY -- "A paddler is in trouble" or "We have a problem"

@@ -1,0 +1,36 @@
+# Pandoc defaults for The Rivergator Paddler's Guide
+
+to: pdf
+pdf-engine: xelatex
+
+metadata:
+  title: "The Rivergator"
+  subtitle: "A Paddler's Guide to the Lower Mississippi River"
+  author: "John Ruskey"
+  publisher: "Lower Mississippi River Foundation"
+  lang: en-US
+
+variables:
+  documentclass: book
+  classoption:
+    - openany
+    - twoside
+  geometry:
+    - paperwidth=6in
+    - paperheight=9in
+    - margin=0.75in
+    - bindingoffset=0.25in
+  fontsize: 11pt
+  linestretch: 1.4
+  mainfont: "Georgia"
+  sansfont: "Calibri"
+  monofont: "Consolas"
+  linkcolor: "NavyBlue"
+  urlcolor: "NavyBlue"
+  toccolor: "NavyBlue"
+  toc: true
+  toc-depth: 2
+  numbersections: false
+
+include-in-header:
+  - "book-header.tex"

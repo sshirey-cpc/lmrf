@@ -1,0 +1,87 @@
+---
+title: "How To Paddle The Big River Main Channel Vs Back Channel"
+source: "https://www.rivergator.org/paddlers-guide/how-to-paddle-the-big-river/main-channel-vs-back-channel/"
+type: "paddlers-guide"
+---
+
+# How To Paddle The Big River Main Channel Vs Back Channel
+
+Main Channel vs. Back Channel305admin2021-04-18T15:18:24+00:00
+
+Main Channel vs. Back Channel
+
+Frequently on the Lower Mississippi you will notice places where the bank side forest opens up and water seems to be flowing inwards behind the islands. You may be ready for a change of scenery from the giant main channel of the Big River. Of course you will want to know: Is it safe to follow the back channel? How do I know whether this channel goes through? Where does the channel end up? Will I become stranded in some remote place? Even with a GPS or access to google earth (where you can see where you are, and maybe you can even see the channel in question) this back channel image you can see on any handheld electronic navigation may or may not be accurate because it doesn’t display “real time.” The Mississippi river fluctuates so dramatically that what you are seeing in front of you is the best indication of water flow. You must learn to read the river. Here’s how to do it in situations concerning back channels.
+
+Sometimes the main channel splits into a back channel around an island, and sometimes that back channel splits into other back channels. The rule of thumb is “wherever water is flowing in it will eventually flow out.” You can safely follow any back channel that has enough water flow that you can paddle in. (Note: this rule holds until flood stage). Even if you don’t know where it goes, if you like a little adventure and can tolerate the unknown, follow the channel. Most likely you will paddle a while through some very little seen places, experience wildlife & wild places, and then return to the main channel somewhere downstream.
+
+For every rule there are exceptions. The exception to the flowing water rule is the Lower Mississippi phenomena known as the “Pass.” Some of these openings are actually “Passes,” which is just a bankside opening where the water can flow in either direction. If you end up in a lake, you just paddled through a pass. After you’ve satisfied you curiosity and taken some exceptional photos only possible in these tight passages, turn around and paddle back out. You will return to the main channel with new knowledge and having seen places of beauty & wild wonder that no one on the main channel will ever see.
+
+However, if it makes you nervous to not know exactly where you are by all means stay in the main channel. Dangers in the back channel include close encounters with creatures like spiders, snakes, and bears, as well as locals who may not be happy to see you.
+
+As you paddle down the Lower Mississippi River you can safely navigate behind the islands and see things not possibly viewed on the main channel. Behind these islands you will also gain reprieve from the wind and towboat traffic and some relief from the vast & sometimes overwhelming “hugeness” of the main channel. Simultaneously you can enjoy some close up views of wildlife and the floodplain hardwood forests found in this area. Sometimes hard paddling is necessary to gain entrance into these oftentimes narrow openings, but the rewards are worth the effort. These mouths of these openings will lead you into deep muddy passages which feel primeval & wild, the scenery here is not much different than what you would experience in jungle places like the Amazon or the Congo.
+
+The Mississippi is historically a braided & meandering river which forms islands and many secondary channels in addition to the main channel. While man’s efforts to stabilize the main channel have lessened the degree to which the river meanders, and river engineers have cut off many back channels and islands from the main channel, the Mississippi is still today full of big islands and each island has a back channel (sometimes known as the chute of the island).
+
+To keep flow in the main channel the Army Corps have sealed off the back channels with rock walls known as dikes. These dikes are designed to keep water in the main channel during low water, but allow flow when the river rises higher. Therefore, depending on river level these back channels are open. Good news for paddlers: in a stunning reversal of old-style engineering back channels are being reopened with notches in the dikes, such as the dikes behind Island 63. These will be detailed in the paddler’s guide, and are listed below. In general all back channels open up when the river rises into medium water levels, which in general is twenty feet above the low water plane. For instance, using the Helena Gage as reference water starts flowing over all the dikes at around 18HG. However some precaution is necessary because the first overtopping of these dikes can result in turbulent water through narrow rocky openings which cascade into the pools below with standing waves and vigorous turbulence surrounding, often swirling into these pools with side-to-side whirlpools, explosive boils and violent eddies.
+
+Warning: as with any river navigation through known turbulence it is always safest to scout first and then proceed with caution. Use the same method you would use on a mountain river rapids as you approach and then pass through any dikes that are recently overtopped (due to rising river levels) or any dikes that have been notched. If you are alone make a landing to one side of the dike or the other and visually inspect the cascade. If you are with other in a flotilla of vessels, your safest procedure is to make a landing above the obstruction and inspect from foot. After inspection designate a scout vessel to go first. A radio or cell phone (if there is any reception) could be handy at this point, but the best method is to learn & use paddler’s visual signals [CLICK HERE for Paddler’s Signals]. Once the safety & the route is determined all others can paddle through one at a time. Sometimes it might be necessary to pull over to the side of the rock wall of the dike and portage over. This decision depends on the paddling ability of each vessel and the river level (and to a lessor degree the wind, which can whip any area of river agitation into greater turbulence with higher waves and more chaotic conditions).
+
+Water levels with respect to Dikes & Back Channels:
+
+In general at or above medium water (say 20 HG in the Helena Reach) you can always find a safe route over any dike, but you might not find much flow in the back channel. Usually the back channels start flowing better above medium waters 25 HG, with good flow as the river rises to high water levels (around 30 HG), and strong flow as it nears flood stage. The river banks start going under water around HG40, and at flood stage 44 HG all banks will be underwater and there will be very strong flow in all back channels. Note: Remember that river gage readings vary with each gage.
+
+[CLICK HERE: Safe Travel Through a Notched or Overtopped Back Channel Dike]
+
+WHAT ARE THE BEST BACK CHANNELS TO EXPLORE?
+
+On this introductory 100+ mile section of the Lower Mississippi River, the very best of back channel exploration is paddling through the Old Channel of the White River behind Montgomery Island or paddling behind Choctaw Island, which are both freely flowing until low water levels. But if the river is at medium water levels or higher additional off channel can be found in the following locations:
+
+Click on each for more description:
+
+LBD 670
+
+St. Francis Dikes
+
+LBD 669
+
+Flower Lake Dikes
+
+LBD 656
+
+East Montezuma Bar
+
+RBD 657-654
+
+Montezuma Towhead
+
+LBD 641-635
+
+Island 62
+
+LBD 640.5 – 637
+
+Island 63
+
+RBD 630-627.5
+
+Island 64
+
+RBD 616-609
+
+Island 69
+
+LBD 605 – 610
+
+Island 70
+
+RBD 585-580
+
+Arkansas Bar
+
+571-567
+
+Catfish Point Bar
+
+Close product quick view×
+
+Title

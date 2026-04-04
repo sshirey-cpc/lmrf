@@ -1,0 +1,53 @@
+---
+title: "How To Paddle The Big River Options For Moderate Intermediate Paddlers"
+source: "https://www.rivergator.org/paddlers-guide/how-to-paddle-the-big-river/options-for-moderate-intermediate-paddlers/"
+type: "paddlers-guide"
+---
+
+# How To Paddle The Big River Options For Moderate Intermediate Paddlers
+
+Options for Moderate (Intermediate) Paddlers305admin2021-04-18T15:19:42+00:00
+
+Options for Moderate (Intermediate) Paddlers
+
+While the Lower Mississippi River should only be run by advanced paddlers, there are several isolated opportunities moderate paddlers, the list of which is below. These are places where you can park at a landing, push out and paddle in (normally) calm waters of harbors and back channels, practice your skills, view the strong waters of the main channel of the big river from the safety of protected waters, and slowly become accustomed to its wild motions, and then return to your vehicle. In general intermediate paddlers should avoid the challenges of the main channel until they are comfortable and capable with the extremes of big volume waters and towboat activity.
+
+[CLICK HERE: Beginner’s Options]
+
+671-673 LBD
+
+MOUTH OF THE ST. FRANCIS RIVER
+
+In general the St. Francis flows slowly and lazily into its big mother Mississippi and intermediate paddlers can put in at the end of the dirt road, paddle up the St. Francis a ways, turn around, and float back out to the confluence. Before you put in inspect waters and watch for agitated boils, eddies, whirlpools. If the Mississippi is low and the St. Francis basin has received heavy rain fall the St. Francis can run fast and wild. You can also revolve around the big eddy at the confluence and observe changes in water color between the two rivers, but be careful not to get swept up in the strong flow of the Mississippi and pushed downstream. Be especially cautious on days with a wind out of the North, NW or West.
+
+654.7 LBD
+
+MONTEZUMA LANDING
+
+Beautiful landing with tall trees, remote and unmarked. Excellent location for intermediate paddlers to hone their big river skills. Giant 20 acre eddy created by convolutions in the riverbank. Put in from concrete boat ramp or off sandbar and swirl around eddy practicing your paddling technique as the eddy produces a variety of water conditions, swirl into the main channel, ride the main channel downstream to bottom of eddy and then re-enter eddy to return to landing. Perpetual motion. A real-life treadmill for intermediate paddlers. Sometimes strong whirlpools form along edge of eddy.
+
+LBD 637 (BACK CHANNEL ISLAND 63)
+
+QUAPAW LANDING N-34.262962, W-90.744088
+
+Embark upstream from Quapaw Landing and paddle as far as you feel like up the back channel of Island 63, wild and remote, dense forests on either bank. Good place for intermediate paddlers to practice their upstream paddling technique, and then ferry crossings back and forth to the island. Paddle up to rock wall dike two miles above landing (visible below 18HG) turn around and practice paddling through the snags and sawyers that abound in this back channel.
+
+MELLWOOD LAKE
+
+Intermediate paddlers can access Mellwood Lake from private boat launch over the levee from Mellwood Arkansas (Ron & Di’s Marina) and enjoy the pleasures of big lake paddling, three miles eastward down to the mouth of the lake, or five miles northward curving east to the dead end top side.  Watch for incoming storms and seek the shelter of the banks in case of front line winds which often preceded storms and can easily flip your craft amidst the commotion of three-foot crashing waves.
+
+DESOTO LAKE
+
+(Similar to Mellwood Lake) Intermediate paddlers can enjoy the pleasures of big lake paddling on DeSoto Lake.  The best public launch is found at Hillhouse Landing (Hwy 1 South of Rena Lara, gravel road to levee).  Paddle two miles west to reach the incredibly beautiful mouth of the lake, or paddle five to six miles northward curving west to the dead end top side.  Mature willow forests on the inside curve of the lake, taller mature bottomland forest on outside.  Watch for incoming storms and seek the shelter of the banks in case of front line winds which often preceded storms and can easily flip your craft amidst the commotion of three-foot crashing waves.
+
+ARKANSAS CITY BOAT RAMP
+
+Read Arkansas City River Gage before using.  Below 10 okay for beginners.  10 to 30 okay for intermediate.  Above 30 only expert paddlers.  At the right river level this is the perfect location for intermediate paddlers to practice big volume paddling without the danger of towboat traffic.  When the river rises above 10 on the Arkansas City Gage the water speed increases and snags, sawyers, boils, eddies and whirlpools appear in miniature version of what you will experience in the even bigger volume of the main channel.  Put in using concrete ramp, paddle upstream as far as you feel like and return back to landing with gentle to moderate flow.  Or paddle upstream and practice ferry crossings and back from the beautiful white sand beaches and steep muddy banks of Choctaw Island.
+
+GREENVILLE HARBOR (FERGUSON LAKE)
+
+Long flat water harbor, but considered intermediate because of heavy commercial traffic.  Busy industrial port.  Park over levee from downtown Greenville.  Less traffic paddling north towards the forested banks wrapping around of Ferguson Lake.  At medium to high water ambitious paddlers can follow lake around a 180 degree bend curving west and then south six miles out and then six miles back, which is a long day on flat water.  Or paddle south five miles to mouth of harbor at Warfield Point but beware heavy two traffic from dozens of industrial and agricultural facilities as well as fleeting, drydocking and tow construction facilities.  The towering smoke stacks of the Greenvillle Power Plant dominate the horizon.  (Note: Warfield Point State Park was closed down due to the flood of 2011 to reopen at future date).
+
+Close product quick view×
+
+Title

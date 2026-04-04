@@ -1,0 +1,110 @@
+[
+  {
+    "id": "3458",
+    "title": "St. Louis to Caruthersville",
+    "slug": "stlouis-to-caruthersville",
+    "order": "1",
+    "meta": {
+      "avada_post_views_count": "131",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "25-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3459",
+    "title": "Caruthersville to Memphis",
+    "slug": "caruthersville-to-memphis",
+    "order": "2",
+    "meta": {
+      "avada_post_views_count": "117",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "16-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3460",
+    "title": "Memphis to Helena",
+    "slug": "memphis-to-helena",
+    "order": "2",
+    "meta": {
+      "avada_post_views_count": "126",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "19-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3461",
+    "title": "Helena to Greenville",
+    "slug": "helena-to-greenville",
+    "order": "3",
+    "meta": {
+      "avada_post_views_count": "118",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "26-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3462",
+    "title": "Greenville to Vicksburg",
+    "slug": "greenville-to-vicksburg",
+    "order": "4",
+    "meta": {
+      "avada_post_views_count": "161",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "27-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3463",
+    "title": "Vicksburg to Baton Rouge",
+    "slug": "vicksburg-to-baton-rouge",
+    "order": "5",
+    "meta": {
+      "avada_post_views_count": "298",
+      "avada_today_post_views_count": "2",
+      "avada_post_views_count_today_date": "22-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3464",
+    "title": "Atchafalaya River",
+    "slug": "atchafalaya-river",
+    "order": "7",
+    "meta": {
+      "avada_post_views_count": "372",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "28-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3465",
+    "title": "Baton Rouge To Venice",
+    "slug": "baton-rouge-to-venice",
+    "order": "10",
+    "meta": {
+      "avada_post_views_count": "129",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "22-03-2026"
+    },
+    "chapters": []
+  },
+  {
+    "id": "3466",
+    "title": "Birdsfoot Delta",
+    "slug": "birdsfoot-delta",
+    "order": "11",
+    "meta": {
+      "avada_post_views_count": "200",
+      "avada_today_post_views_count": "1",
+      "avada_post_views_count_today_date": "25-03-2026"
+    },
+    "chapters": []
+  }
+]

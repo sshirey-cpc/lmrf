@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenville to Vicksburg — The Rivergator</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;background:#f8f6f2;color:#1a1a1a}
+.site-header{background:#1B4965;color:white;padding:16px 20px}
+.site-header h1{font-size:22px}.site-header h1 a{color:white;text-decoration:none}
+.site-nav{background:#15374d;display:flex;justify-content:center;flex-wrap:wrap}
+.site-nav a{color:#a8cce0;text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.5px;padding:12px 20px}
+.site-nav a:hover,.site-nav a.active{color:white;background:rgba(255,255,255,0.1)}
+.breadcrumb{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#888;padding:12px 20px;max-width:1100px;margin:0 auto}
+.breadcrumb a{color:#1B4965;text-decoration:none}
+.section-hero{max-width:1100px;margin:0 auto;padding:0 20px 24px}
+.section-hero h1{font-size:32px;color:#1B4965;margin-bottom:4px}
+.section-hero .mile-range{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#888;font-style:italic}
+.section-stats{display:flex;gap:24px;padding:16px 0;border-top:1px solid #e0ddd6;border-bottom:1px solid #e0ddd6;margin-bottom:20px}
+.section-stat{text-align:center}.section-stat .num{font-family:'Helvetica Neue',Arial,sans-serif;font-size:22px;font-weight:700;color:#1B4965}.section-stat .label{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.5px}
+.section-layout{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:1fr 340px;gap:24px}
+.section-map{height:450px;border-radius:8px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);position:relative}
+#map{width:100%;height:100%}
+.map-style-toggle{position:absolute;top:12px;left:12px;z-index:10;display:flex;background:white;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.3);overflow:hidden}
+.map-style-toggle button{border:none;background:white;color:#333;padding:12px 20px;font-size:14px;font-weight:700;cursor:pointer}
+.map-style-toggle button.active{background:#1B4965;color:white}
+.map-style-toggle button:hover:not(.active){background:#e0eef5}
+.map-style-toggle button:not(:last-child){border-right:1px solid #ddd}
+.map-legend{display:flex;gap:16px;padding:10px 0;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#666}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+.chapter-list{background:white;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden}
+.chapter-list-header{background:#1B4965;color:white;padding:14px 18px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.chapter-card{display:block;padding:12px 16px;border-bottom:1px solid #eee;cursor:pointer;transition:background 0.15s}
+.chapter-card:hover{background:#f0f5f8}
+.chapter-card.highlighted{background:#dceef8;border-left:4px solid #1B4965}
+.chapter-card h3{font-size:15px;color:#1B4965;margin:0 0 2px}.chapter-card .chapter-meta{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999}
+.chapter-type{display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-bottom:4px}
+.section-nav{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:flex;justify-content:space-between}
+.section-nav a{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#1B4965;text-decoration:none;padding:10px 16px;border:1px solid #d0d0d0;border-radius:6px}.section-nav a:hover{background:#e0eef5}
+.site-footer{text-align:center;padding:24px 20px;color:#999;font-size:13px;border-top:1px solid #e0ddd6}.site-footer a{color:#1B4965;text-decoration:none}
+.mapboxgl-popup-content{padding:10px 14px;border-radius:6px;max-width:240px}.popup-title{font-weight:700;color:#1B4965;font-size:13px}.popup-detail{font-size:11px;color:#666;margin-top:2px}.popup-link{display:block;margin-top:6px;font-size:12px;color:#1B4965;font-weight:600;text-decoration:none}
+@media(max-width:768px){.section-layout{grid-template-columns:1fr}.section-map{height:300px}.section-hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="site-header"><h1><a href="http://35.188.103.101">The Rivergator</a></h1></header>
+<nav class="site-nav"><a href="http://35.188.103.101" class="active">River Log</a><a href="#">Paddler's Guide</a><a href="#">Resources</a><a href="#">About</a></nav>
+<div class="breadcrumb"><a href="http://35.188.103.101">River Log</a> &rsaquo; Greenville to Vicksburg</div>
+<div class="section-hero">
+<h1>Greenville to Vicksburg</h1>
+<div class="mile-range">Mile 537–437</div>
+<div class="section-stats">
+<div class="section-stat"><div class="num">31</div><div class="label">Markers</div></div>
+</div>
+</div>
+<div class="section-layout">
+<div>
+<div class="section-map"><div id="map"></div>
+<div class="map-style-toggle"><button class="active" id="btn-terrain">Terrain</button><button id="btn-satellite">Satellite</button></div>
+</div>
+<div class="map-legend">
+<div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div> Access</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div> Camping</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Hazard</div>
+<div class="legend-item"><div class="legend-dot" style="background:#3498db"></div> Bridge/Creek</div>
+<div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div> Town</div>
+</div>
+</div>
+<div class="chapter-list"><div class="chapter-list-header">Mile Markers</div><div id="marker-list" style="max-height:400px;overflow-y:auto;"></div></div>
+</div>
+<div class="section-nav"><a href="http://35.188.103.101/sections/helena-to-greenville.html">&larr; Helena to Greenville</a><a href="http://35.188.103.101/sections/vicksburg-to-baton-rouge.html">Vicksburg to Baton Rouge &rarr;</a></div>
+<footer class="site-footer"><p>The Rivergator &copy; <a href="https://lowermsfoundation.org">Lower Mississippi River Foundation</a></p><p style="margin-top:4px">Written by John Ruskey</p></footer>
+<script>
+mapboxgl.accessToken='pk.eyJ1Ijoic3NoaXJleTc2IiwiYSI6ImNtbmdmeHphNDA4aW8yd29wbWgxYTY3cWcifQ.34MAJqDY8qcKm_48AMQuNQ';
+const markers=[{mile:537.0,bank:"LBD",name:"Warfield Point Park Ideally situated along",lng:-91.12731,lat:33.35891,type:"other",slug:"mile-537-0-warfield-point-park-ideally"},{mile:531.5,bank:"RBD",name:"Sunnyside Landing Sunnyside",lng:-91.17051,lat:33.30051,type:"access_point",slug:"mile-531-5-sunnyside-landing-sunnyside"},{mile:525.0,bank:"RBD",name:"above the first of",lng:-91.10201,lat:33.21741,type:"other",slug:"mile-525-0-above-the-first-of"},{mile:523.0,bank:"RBD",name:"Island 86",lng:-91.08821,lat:33.19071,type:"camping",slug:"mile-523-0-island-86"},{mile:519.0,bank:"RBD",name:"Kentucky Bend",lng:-91.09261,lat:33.13331,type:"other",slug:"mile-519-0-kentucky-bend"},{mile:515.0,bank:"LBD",name:"Leota Bar/Cracraft Chute",lng:-91.14581,lat:33.11051,type:"camping",slug:"mile-515-0-leota-barcracraft-chute"},{mile:514.0,bank:"RBD",name:"Worthington Cutoff, Matthews Bend, Grand Lake, Isl",lng:-91.16571,lat:33.10211,type:"town",slug:"mile-514-0-worthington-cutoff-matthews-bend"},{mile:513.0,bank:"RBD",name:"inhabiting what remains of",lng:-91.17071,lat:33.08871,type:"other",slug:"mile-513-0-inhabiting-what-remains-of"},{mile:512.0,bank:"RBD",name:"(and up back channel) Grand Lake landing",lng:-91.16761,lat:33.07431,type:"access_point",slug:"mile-512-0-and-up-back-channel"},{mile:510.0,bank:"RBD",name:"Cracraft Bar",lng:-91.15901,lat:33.04631,type:"camping",slug:"mile-510-0-cracraft-bar"},{mile:505.0,bank:"LBD",name:"Corregidor Bar Low-lying bar",lng:-91.15771,lat:32.97591,type:"camping",slug:"mile-505-0-corregidor-bar-lowlying-bar"},{mile:503.5,bank:"RBD",name:"Three and",lng:-91.15791,lat:32.96261,type:"other",slug:"mile-503-5-three-and"},{mile:503.0,bank:"RBD",name:"Two and",lng:-91.14191,lat:32.95821,type:"other",slug:"mile-503-0-two-and"},{mile:500.0,bank:"RBD",name:"Wilson Point Bar",lng:-91.09271,lat:32.94621,type:"camping",slug:"mile-500-0-wilson-point-bar"},{mile:496.0,bank:"LBD",name:"Tennis Court Landing Paddlers will find Mayersvill",lng:-91.06421,lat:32.89691,type:"access_point",slug:"mile-496-0-tennis-court-landing-paddlers"},{mile:494.0,bank:"LBD",name:"Baleshead/Stack Island/Ben Lamond The river opens ",lng:-91.08401,lat:32.87341,type:"camping",slug:"mile-494-0-balesheadstack-islandben-lamond-the"},{mile:487.0,bank:"LBD",name:"Shipland Wildlife Management Area Opposite Lake",lng:-91.15181,lat:32.79411,type:"other",slug:"mile-487-0-shipland-wildlife-management-area-2"},{mile:466.9,bank:"RBD",name:"and Dogtail Landing (RBD 466.5)",lng:-91.15611,lat:32.61801,type:"access_point",slug:"mile-466-9-and-dogtail-landing-rbd"},{mile:462.0,bank:"RBD",name:"Willow Island The Main channel runs southeasterly",lng:-91.10531,lat:32.56101,type:"camping",slug:"mile-462-0-willow-island-the-main"},{mile:461.0,bank:"LBD",name:"Chotard Lake Terrapin Neck Cutoff",lng:-91.09561,lat:32.54691,type:"other",slug:"mile-461-0-chotard-lake-terrapin-neck"},{mile:459.0,bank:"LBD",name:"2010 F-4 Tallulah - Yazoo Tornado",lng:-91.10331,lat:32.51931,type:"other",slug:"mile-459-0-2010-f4-tallulah-yazoo"},{mile:458.8,bank:"LBD",name:"Eagle Lake Pass At",lng:-91.10331,lat:32.51931,type:"confluence",slug:"mile-458-8-eagle-lake-pass-at"},{mile:458.0,bank:"LBD",name:"Tara Landing",lng:-91.11211,lat:32.50691,type:"access_point",slug:"mile-458-0-tara-landing"},{mile:457.0,bank:"RBD",name:"Madison Parish Port and Public Boat Launch",lng:-91.12161,lat:32.49271,type:"other",slug:"mile-457-0-madison-parish-port-and"},{mile:455.0,bank:"LBD",name:"above 25VG",lng:-91.10211,lat:32.46681,type:"other",slug:"mile-455-0-above-25vg"},{mile:449.0,bank:"RBD",name:"Sparta Island",lng:-91.01871,lat:32.42721,type:"camping",slug:"mile-449-0-sparta-island"},{mile:446.5,bank:"LBD",name:"Paw Paw Chute",lng:-90.99181,lat:32.39141,type:"other",slug:"mile-446-5-paw-paw-chute"},{mile:442.1,bank:"RBD",name:"the canoeist",lng:-90.98331,lat:32.34951,type:"other",slug:"mile-442-1-the-canoeist"},{mile:438.0,bank:"RBD",name:"King’s Point/Secret Entrance into Lake Centennia",lng:-90.91621,lat:32.34111,type:"other",slug:"mile-438-0-kings-pointsecret-entrance-into"},{mile:437.7,bank:"LBD",name:"Mouth of the Yazoo River Red channel",lng:-90.91021,lat:32.34111,type:"confluence",slug:"mile-437-7-mouth-of-the-yazoo"},{mile:437.3,bank:"LBD",name:"It's best to cut",lng:-90.89811,lat:32.33131,type:"other",slug:"mile-437-3-its-best-to-cut"}];
+const typeColors={access_point:'#2ecc71',camping:'#e67e22',hazard:'#e74c3c',bridge:'#3498db',town:'#9b59b6',confluence:'#3498db',other:'#7f8c8d'};
+const riverCoords=[[-91.13378565519817,33.59473335061158],[-91.17234479762159,33.583556547140795],[-91.21552787513788,33.568668942599594],[-91.22894847731055,33.54550640390262],[-91.19754746770217,33.517214799697925],[-91.17698519434204,33.50568519788168],[-91.15340198729274,33.49151372968662],[-91.1378710493799,33.48232219486855],[-91.1242898446041,33.46869212637214],[-91.1177012427809,33.45987652468853],[-91.11407657384714,33.432733519341326],[-91.11450123892298,33.406389381015096],[-91.11376543695859,33.381626975917186],[-91.12664497215754,33.3598283044788],[-91.16177578053738,33.33105956345542],[-91.17187204842352,33.30486895824201],[-91.13397076923215,33.27087228619697],[-91.11375496170407,33.23297007960395],[-91.0955657552536,33.20657567496441],[-91.08319114960113,33.169626934843045],[-91.09236421707318,33.136489861074885],[-91.1319502263928,33.11494885516516],[-91.16147316686425,33.101885517851805],[-91.16988236810411,33.083025913786976],[-91.16072283105687,33.05990564293878],[-91.14961376029858,33.03418863794144],[-91.15773896005969,33.000143297833326],[-91.15804515890912,32.98040982721716],[-91.13452935155728,32.962827891031935],[-91.11295421244296,32.95549882364634],[-91.0828597368383,32.944532022973924],[-91.06620013134798,32.92383748565203],[-91.07266713092612,32.887809411764586],[-91.10818600522049,32.8594386714851],[-91.14102201330815,32.83508839823597],[-91.15010401406826,32.81223166030278],[-91.14657781126942,32.78129725357984],[-91.14798740988402,32.74843578017903],[-91.14060534054339,32.73630837863249],[-91.1021693966713,32.73503584586077],[-91.06564058692717,32.72729824605249],[-91.06135198394671,32.70436557460898],[-91.07103798585273,32.68643777091742],[-91.10724352875702,32.6722935664718],[-91.12109933144718,32.66698283188966],[-91.14406820313154,32.645345359446104],[-91.14677540290269,32.61580002018109],[-91.13460013161514,32.591397816144706],[-91.10442452107235,32.559555343697866],[-91.10371678607069,32.529607537633694],[-91.1105521874418,32.51117213350734],[-91.11538498802477,32.49843239745613],[-91.11241278614311,32.47844139353191],[-91.08133230890283,32.44994012250499],[-91.06311030406303,32.44160338807563],[-91.04317896513766,32.43670912111417],[-91.02376109244891,32.43082778720173],[-91.00011228502767,32.41403378470688],[-91.0050837504562,32.3653751080428],[-90.90225192093179,32.32056010264868]];
+const map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/outdoors-v12',center:[-91.0, 32.9],zoom:8});
+map.addControl(new mapboxgl.NavigationControl(),'top-right');
+function addRiverLine(){if(map.getSource('river'))return;map.addSource('river',{type:'geojson',data:{type:'Feature',geometry:{type:'LineString',coordinates:riverCoords}}});map.addLayer({id:'river-glow',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':6,'line-opacity':0.3,'line-blur':2}});map.addLayer({id:'river-line',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':3,'line-opacity':0.8}})}
+const markerEls={},mapMarkers={};
+function highlightMarker(mile){document.querySelectorAll('.chapter-card.highlighted').forEach(el=>el.classList.remove('highlighted'));const card=document.getElementById('card-'+mile);if(card){card.classList.add('highlighted');const list=document.getElementById('marker-list');const cardTop=card.offsetTop-list.offsetTop;list.scrollTo({top:cardTop-list.clientHeight/3,behavior:'smooth'})}Object.keys(markerEls).forEach(k=>{const el=markerEls[k];if(k==mile){el.style.width='18px';el.style.height='18px';el.style.border='3px solid #1B4965'}else{el.style.width='12px';el.style.height='12px';el.style.border='2px solid white'}})}
+function addMarkers(){const list=document.getElementById('marker-list');list.innerHTML='';markers.forEach(m=>{const color=typeColors[m.type]||'#7f8c8d';const el=document.createElement('div');el.style.cssText='background:'+color+';width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.3);cursor:pointer;transition:all 0.2s;';markerEls[m.mile]=el;const popup=new mapboxgl.Popup({offset:10}).setHTML('<div class="popup-title">Mile '+m.mile+' '+m.bank+'</div><div class="popup-detail">'+m.name+'</div><a class="popup-link" href="http://35.188.103.101/'+m.slug+'/">Read guide &rarr;</a>');const marker=new mapboxgl.Marker(el).setLngLat([m.lng,m.lat]).setPopup(popup).addTo(map);mapMarkers[m.mile]=marker;el.addEventListener('click',()=>highlightMarker(m.mile));const card=document.createElement('div');card.className='chapter-card';card.id='card-'+m.mile;card.style.cursor='pointer';card.innerHTML='<div class="chapter-type" style="background:'+color+'22;color:'+color+';border:1px solid '+color+'44;">Mile '+m.mile+' '+m.bank+'</div><h3>'+m.name+'</h3><a href="http://35.188.103.101/'+m.slug+'/" style="font-size:12px;color:#1B4965;font-weight:600;text-decoration:none;" onclick="event.stopPropagation()">Read guide &rarr;</a>';card.addEventListener('click',()=>{map.flyTo({center:[m.lng,m.lat],zoom:12,duration:1200});Object.values(mapMarkers).forEach(mk=>{if(mk.getPopup().isOpen())mk.togglePopup()});marker.togglePopup();highlightMarker(m.mile)});list.appendChild(card)})}
+map.on('load',()=>{addRiverLine();addMarkers()});
+document.getElementById('btn-terrain').onclick=()=>{map.setStyle('mapbox://styles/mapbox/outdoors-v12');setActive('btn-terrain');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+document.getElementById('btn-satellite').onclick=()=>{map.setStyle('mapbox://styles/mapbox/satellite-streets-v12');setActive('btn-satellite');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+function setActive(id){document.querySelectorAll('.map-style-toggle button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active')}
+</script>
+</body>
+</html>

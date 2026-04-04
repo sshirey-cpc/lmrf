@@ -1,0 +1,21 @@
+# Large binary files - don't commit to git
+*.wpress
+*.wpress.crdownload
+
+# Node modules
+rivergator-scrape/node_modules/
+
+# WordPress XML export (27MB) - backed up elsewhere
+rivergator-scrape/therivergator.WordPress.2026-04-01.xml
+
+# Extracted wpress content - large, backed up in .wpress file
+wpress-extracted/
+
+# Scraped HTML (16MB) - regenerable from scripts
+scraped-html/
+
+# Temp files
+*.pyc
+__pycache__/
+/tmp/
+

@@ -1,0 +1,29 @@
+---
+title: "How To Paddle The Big River Monitoring River Rise With A Stick"
+source: "https://www.rivergator.org/paddlers-guide/how-to-paddle-the-big-river/monitoring-river-rise-with-a-stick/"
+type: "paddlers-guide"
+---
+
+# How To Paddle The Big River Monitoring River Rise With A Stick
+
+Monitoring River Rise with a Stick305admin2021-04-18T15:19:01+00:00
+
+Monitoring River Rise with a Stick
+
+Here’s what you can do to get a good reading without any electronics or modern technology.  I call it “the stick method.”  After you make a landing for an overnight camp place a stick solidly at the edge river at water level near your camp.  (Do the same at one or two other locations, just in case one stick gets washed away.)  Now draw lines in the sand or mud above the sticks at an even interval equal to the height of one stick.
+
+Here’s how to choose interval: pick out a short stick and use it as your measuring rod.  It doesn’t matter exactly how tall this stick is in inches or feet, but it should be shorter than your knee cap (because the Mississippi River never rises or falls more than 4 feet in 24 hours).  Pick a stick of any length up to knee level and use it to mark vertical height of one stick between lines.  If you have doubt about vertical height, use the surveyor’s trick and squat down or crouch down to stick height holding the stick in front of you and eyeball a level line from water’s edge across the stick to the bank rising behind.  Mark that location and then repeat, making lines for each vertical rise of the unit 1 stick.
+
+Now plant other sticks into the sand to help identify & save your lines.  As you set up your tent, gather firewood and cook supper watch the river line in relation to your sticks.  You will soon be able to decide if the river is rising or falling.  If its a fast rise or a fast fall you will be able to see it rise or fall against your designated measuring stick.  If necessary during a fast rise, pull your canoe or kayak further up the bank above the fast rising waters.  After supper enjoy sunset and watch the changing river.  Before you go to sleep make one last inspection.  If necessary move your vessel even higher.  Survival on the Mississippi always favors the cautious!
+
+The next morning arise and check your stations.  Now you will know for sure how fast the river is rising or falling.  During a falling river: as the river falls you can make lines below your original stick using the same method, add lines as the water falls.
+
+For more reading: Mark Twain’s 1883 Life on the Mississippi contains some useful (and very humorous) descriptions of the rising and falling river.
+
+Reference: for accurate river levels refer to the various gages along this section of river.  For the latest river levels and week forecast, visit the NOAA Lower Mississippi River Forecast Center:
+
+http://www.srh.noaa.gov/lmrfc/?n=lmrfc-mississippiandohioriverforecast
+
+Close product quick view×
+
+Title

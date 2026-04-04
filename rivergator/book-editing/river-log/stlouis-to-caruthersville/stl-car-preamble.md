@@ -1,0 +1,218 @@
+---
+title: "Stl Car Preamble"
+section: "St. Louis to Caruthersville"
+section_slug: "stlouis-to-caruthersville"
+mile_range: "Mile 195-850"
+chapter_slug: "stl-car-preamble"
+pages_stitched: 6
+---
+
+# St. Louis to Caruthersville: Preamble
+
+*St. Louis to Caruthersville — Middle Miss: 195-0 / Lower Miss: 954-846 — 307 miles total*
+
+*For general paddling guidance, safety information, and how to read the Rivergator, see the [Introduction](../../INTRODUCTION.md).*
+
+---
+
+## John Ruskey's Origin Story
+
+I first explored this stretch of river on a 5-month raft trip that began after my high school graduation in 1982. My best friend and I decided that we had enough of traditional schooling, and much to the dismay of our guidance counselors we scuttled all college plans and instead built a raft in the Great North Woods of Minnesota and started downstream for the learning adventure of a lifetime. The river became my teacher, and the big floodplain valley my center for higher education.
+
+Fast forward 30 years and I am still on the Mississippi River, and still as much entrenched in it as I was back then. At present I am writing the Rivergator from my canoe base (called the "cave") in Clarksdale, Mississippi. Clarksdale is located in the great floodplain of the Yazoo-Mississippi Delta, birthplace of the Delta Blues, and one of the wildest stretches of the big river along its length. I am hoping to share with you some of the secrets for safe paddling so that you can too can enjoy its wildness!
+
+The Rivergator was born on that raft trip of 1982/83, and has evolved through three decades of other expeditions, the carving of dozens of dugouts and stripper voyageur canoes, the formation of a canoe company, the training of dozens of guides and hundreds of young apprentices, and lots of exploration and documentation.
+
+## Contributors: Mike Clark, Mark River Peoples, Braxton Barden
+
+Rivergator contributor Mike Clark has been exploring the Confluence and the Middle Miss for over a decade (after canoeing the entire length of the river in 2001). He is considered the expert on running the Chain of Rocks. In 2002 and in 2006 Mike Clark and I spent 5 months exploring the entire Missouri River in dugout canoes, the second time as engages in Scott Mandrell's "Then & Now" Lewis & Clark Re-enactment. Our experiences paddling dugouts to the confluence and over the Chain of Rocks are here in the Rivergator.
+
+In 2009 Mike Clark and I guided German film-makers from St. Louis to Caruthersville (and on down to the Gulf of Mexico) on a giant raft (actually a "canoe-ma-raft," a 16 x 30 platform supported by 2 voyageur canoes as pontoons). Big Muddy Mike has made dozens of other Middle Miss voyages after the 2001 formation of his Big Muddy Adventures, which is based near North Riverfront Park in St. Louis (including a "Huck 'n' Jim expedition" where he paddled it all after dark just like Huck and Jim did -- this is not recommended).
+
+Rivergator contributor Mark River Peoples was born and raised along the Mississippi River in St. Louis and East St. Louis. After a career in pro football, Mark River is now a full-time guide on the Lower Mississippi River, and writes a blog, appropriately called the "Mark River Blog."
+
+Former Navy Chief and Rivergator Contributor Braxton Barden is a full time river guide and photographer with the Quapaw Canoe Company. Mark River and Braxton Barden explored St. Louis to Cairo one last time in the low water of Nov 2014 to verify everything.
+
+## Real-Life Dramas on the River
+
+I will share many real-life dramas and river experiences along the way as one of the best way to illustrate the challenges and demands of the big river. Even though it was over 30 years ago, I still remember in vivid detail floating rowing our 12x24 foot raft past the Missouri River Confluence, and then down the awful Chain of Rocks Canal, and finally through the last lock & dam and into St. Louis. We continued on down the Middle Miss to the Ohio, and then on down the Lower Miss to the Deep South. Our odyssey ended in disaster, a raft wreck, as is related in the Rivergator Memphis-to-Helena Section. I am lucky to be alive. The river tried to kill me. But then it turned around and saved me.
+
+That journey did something to me. My imagination blossomed with the freedom of the flowing. It turned my eyes to the river, and the health of the free-flowing waters of America. My blood started flowing with the muddy flow of the Mississippi River, and continues flowing to this day now with the Rivergator: Paddler's Guide to the Middle and Lower Mississippi River.
+
+---
+
+## Confluences
+
+For paddlers there is nothing more fascinating than approaching and then passing the junction of two rivers, especially when the rivers are major rivers coming together from long distances apart. We all walk the land that was once dominated by dinosaurs, and we all breathe the air Caesar breathed. And yet none seem as tangible as the immediate connection a river gives us to the places and people who live on the other end, and in the tributaries and drainages along the way.
+
+Although most of St. Louis straddles short bluffs and terraces 100-200 feet high, it is defined by its waterways. St. Louis sits like the center hub of a giant wheel. You find rivers every direction you go, big rivers, the rivers that define the very heart of America: the Upper Mississippi, the Illinois, and the Missouri. And the Middle Miss gathers them all together and off they go slipping and sliding southward through an elegant, graceful glacial-carved valley ten miles wide.
+
+You could depart by canoe from downtown St. Louis and without leaving water reach such far flung locales as Omaha, Chicago, Pittsburgh, Minneapolis, Billings and Bismarck. Of course downstream will eventually bring you to Memphis and then further downstream to New Orleans. In the acceleration of the internal combustion engine most St. Louisans have forgotten their water roots.
+
+LaSalle paddled through here, as well as Joliet and Marquette. Later came Lewis and Clark, and then Schoolcraft. St. Louis is actually an island when viewed from the perspective of rivers, encircled by the Missouri, Mississippi and Meramec (and their tributaries like the Bourbeuse). Big Muddy Mike Clark has proved this four or five times in the past decade. Out of 66 square miles, water covers 6.2% of St. Louis water, most of which is found in the flowing rivers.
+
+While the Rivergator is only concerned with the south-flowing water down the Middle Miss from the Missouri Confluence, it opens the imagination to entertain the watery geography of the biggest city in the heart of America.
+
+---
+
+## Big River Crossroads
+
+By the reality of geography all expeditions must pass this Big River Crossroads. The Missouri River Trail and the Mississippi River Trail are the obvious biggies and create the N-S and E-W axis of the Crossroads. The Lewis & Clark Trail extends this axis to the Pacific (via the Clearwater, Snake and Columbia) and into the Alleghenies via the Ohio and Middle Mississippi (if you follow Capt. Lewis' start place: Pittsburgh).
+
+The Joliette & Marquette route adds in the Great Lakes via the Wisconsin River, and creates a new end place at the mouth of the Arkansas River where the two Jesuit Priests turned around after deciding they had gone far enough down the river to determine it went to the Gulf (and into hostile Spanish territories!).
+
+Lewis & Clark and Joliet & Marquette also exemplify the upstream and downstream possibilities. But they are following the Native peoples, who used the rivers as their highways, going upstream or downstream as their needs demanded. 99% of modern day paddlers go downstream, but you can of course do both! You could paddle UP the Mississippi from New Orleans. To my knowledge only Verlen Kruger has completed the upstream challenge, although at publishing time one group of 6 paddlers have started their way up the Mississippi en route to the Arctic (Jan 2015, the "Rediscovering North America" Expedition). You would learn so much more about the river having done so. Upstream paddlers have to hug the banks. You get close to all of the wildlife and interesting topography you otherwise miss from the middle of the river going downstream.
+
+Other expeditions add the Illinois route to the Northeast. And a tiny fraction add in other smaller tributaries like the St. Croix, Meramec, Iowa, Wabash, Red, or others, and customize their own creative expedition routes according to their interests and personal connections along the way. For instance this year (2014) one particularly creative adventurer came down the Missouri, followed the Mississippi to the Atchafalaya Exit, and then turned up the Red to paddle upstream into the Southern Plains and conclude the trip at hometown Dallas, Texas.
+
+More and more paddlers are turning down the Atchafalaya, and with good reason: you enjoy the best of the deep south's cypress/tupelo gum forests and avoid Cancer Alley, all of the industry and chaos of the Greater Port of New Orleans.
+
+A surprising number of paddlers follow the 6,000+ mile Grand Loop (Circumnavigating all of Eastern United States via the Great Lakes, St. Lawrence Seaway, Intercoastal Waterway, and the Mississippi). A small fraction of paddlers come down the Mississippi, turn up the Ohio, and enter the Tennessee, to lock through over to the Tombigbee and follow that river down to Mobile Bay. That is the route most powerboats follow to the Gulf. But unless you like flat water, you're going to want to stick to the Mississippi and let the Rivergator be your guide.
+
+Further downstream the Ohio River Trail adds in many more permutations to the possible routes, adding in the Cumberland and Tennessee, and many others, but we'll speak of this later when get down to this confluence, further along in the Rivergator.
+
+---
+
+## The Mississippi River Trail
+
+> "Goin' down the Mississippi's something people want do. They're gonna do it. That's the way it is in this country..." (Capt. Ware, *The Elroy*, 1953)
+
+There is a certain amount of attrition, for sure. Many paddlers start out from one of the headwaters, and few actually paddle the whole thing. You could paddle it in one month if you paddled 20 hours a day and the water was high and flowing fast. You could do it in 2 months if you were a monster paddler who felt no pain.
+
+## 2,300 Mile School of River Navigation
+
+The Mississippi prepares source-start paddlers lovingly, and gently teaches them the ways of the river and river commerce incrementally from the Minnesota marshes downstream. We call this the "School of Hard Knocks," or the "2,300 Mile School of River Navigation."
+
+You could start out as a beginner paddler in the marshy Mississippi River headwaters of Lake Itasca and be nurtured by the river in the ways of water flow as you glide along through wetlands and braided channels and across ponds and small lakes. This is elementary school, where you learn the elements of the river and your vessel passing down it.
+
+500 miles downstream in Minneapolis you would have gained a good feel for the sometimes confusing ways of river currents around its bends with boils, shoals and whirlpools. Take that knowledge and graduate to commerce as you paddle through St. Anthony Lock and Dam and are introduced to towboats and barges. Small tows at first, one or two at a time, the pilots tend to be friendlier in the North. Slowly and gently the river teaches you how to paddle amongst tows and safely past industrial sites. The current is slow, the tows small (but getting larger) as you continue downstream.
+
+If you get as far as the Mel Price Lock and Dam in St. Louis you are doing something right! You have learned to navigate shipping channels amongst medium tows with up to 12 barges at a time. Time to graduate to college, the Middle Mississippi, the free-flowing muddy waters with even bigger tows, now 30 barges at a time. Getting through the dangerous St. Louis Harbor is a crash course of what's to come below Baton Rouge.
+
+If you continue down the Middle Miss, the next advancement is at Cairo with the biggest tows on the entire Mississippi, up to 48 barges at a time. Big 3-screw tows pushing upwards of 10,000 horsepower churn the big river into rolling mounds of 8-foot tall standing waves that ricochet back and forth across the channel creating a maelstrom of currents and crashing waves. But you can handle this. You are now advanced degree. Challenging for sure, but the river has given you all the skills you need to make it through.
+
+If you make it 700 miles downstream to Baton Rouge you are offered the very last grade in the school of river navigation, and that is paddling down the busiest inland port in the world with ocean-going freighters! If you have taken your time and studied your real-life lessons, you will be fine. The river has prepared you for this. Add on everything you have learned up to this point, and paddle down the last 235 miles to the Gulf of Mexico for your doctoral graduation in big river navigation with a splash-down in the salty waters of the Caribbean!
+
+---
+
+## The Middle/Lower Mississippi River Trail
+
+Welcome to the longest free-flowing river in the continental United States! And welcome to the longest water trail, your guide: the Rivergator.
+
+Everything changes at St. Louis. No more locks and Dams. No more picturesque towns crowding the pretty banks. The good news for paddlers is that it is all free-flowing water all the way to the Gulf. Free flowing, wild, and unruly. Towns have to be built far from the river's edge, or get flooded. It's a long way between landings and bridges. No more casual paddling. You have to pack and prepare for the worst, and adopt the attitude of survival paddling.
+
+> "There's also a dream-like geometry to things. The shorelines are more distant. The air itself is different. Blow St. Louis you become aware that you are no longer in the North. On the northern river what you see is what you get. On the southern river there are intimations of something beyond what the eye sees." (Charles Dee Sharp)
+
+## Advanced Paddlers Only: The St. Louis Crash Course
+
+Advanced paddlers only on the Middle/Lower Miss. Sure, beginners could start at the headwaters and learn as they go along. But just like you wouldn't start a toddler in High School, beginners would not do well learning to paddle at the Missouri River Confluence.
+
+Paddlers putting in on the big river for the first time in St. Louis will have to enroll in the Chain of Rocks/St. Louis Harbor Crash Course. No beginners here. The river would not be so kindly as it was up in the great North Woods. You should be at least an intermediate paddler with experience in turbulent big volume waters and paddling amongst big commercial vessels.
+
+Read the Rivergator, and remember the three Rs: 1) Make sure you have the right kind of skills/experience, 2) the right vessel/equipment and 3) make the right preparations to get through the St. Louis harbor. Otherwise, your experience will literally be a "crash course."
+
+---
+
+## St. Louis Is the River Hub of America
+
+St. Louis spins around and around like the hub of a giant water wheel of many water passages, the rivers flowing together and pouring over the water wheel from far-flung distances in almost every direction of the compass. Whichever way you turn, a long river is coming in from somewhere far away. The Missouri River leads westward to the Rocky Mountains. The Upper Mississippi leads north to Great North Woods. The Illinois spoke leads north-eastward to Lake Michigan. The Meramec leads southwesterly into the heart of the Ozarks. Using a little artistic freedom, you can envision the Ohio River leading east to Appalachia. (The Ohio doesn't come into St. Louis, but in the big picture it comes in close). All of these rivers come together and confluence along the central hub of rivers, the Middle Mississippi, and then the final and decidedly most grandiose and bellicose of all waterways, the Lower Mississippi flows grandly southward, the accumulation of all rivers in the big heart of America, the great artery of the lifeblood of this quadrant of mother earth.
+
+The journey begins with a bang. Within twenty miles on the Missouri River Confluence you will 1) paddle on three major rivers 2) over (or around) the only waterfall on the big river, 3) under its most famous bridge, 4) by its most famous monument, 5) alongside its largest population center, and 6) through its most dangerous waters (until you reach Baton Rouge). You'll pass by everything so quickly you could never absorb it all. Hopefully it will go smoothly.
+
+The bad news is that it is very dangerous and very demanding, and for expert paddlers only. More paddlers and motorboaters have died in this particular stretch of river than any other. The Chain of Rocks is a wild whitewater feature in the middle of the big city, and has claimed the lives of more than one unprepared paddler.
+
+The good news is that you will enjoy a ten mile stretch with no towboats or commercial traffic, with public parks and lots of incredible views of the big city and its architectural wonders and industrial sprawls. Also, to your benefit, a legendary guide appropriately nicknamed "Big Muddy" and a river company known as Big Muddy Adventures is there to assist you if you so desire.
+
+Owner Big Muddy Mike Clark has become something of a gatekeeper at the Chain of Rocks for long distance expeditions coming down the Missouri and Upper Mississippi to or through St. Louis. He will give your vessel a pre-Coast Guard inspection, and will provide valuable assistance as to what you will need from here on downstream, and what you should leave behind. If he takes a liking to you he might accompany you over the waterfall. Otherwise, you would do well to hire him for the service, or expert advice as to where and when to run. He can also supply you with whatever you need or are missing from the list of essentials for the journey downstream including everything from bailers to sponges to neoprene boots, ropes, paddles, and even a canoe.
+
+### The Water Connections
+
+Imagine paddling the last five miles of the Upper Mississippi (this connects you to the Great North Woods Minnesota through the heartland of America to the Great North Woods, Babe the Blue Ox and Paul Bunyan Country) past the confluence of the "Big Muddy" Missouri River (this connects you to the Rocky Mountains of Idaho and Montana, the Continental Divide, as Lewis & Clark so famously pioneered). Several of the Missouri drainages reach into the Great Plains of Canada (Alberta and Saskatchewan). The Illinois spoke leads to Lake Michigan, Chicago and hence the North Atlantic by canals to the Great Lakes and the St. Lawrence Seaway. Not far downstream the Ohio River comes in from the east draining the rain drenched Appalachians, with side branches reaching up to Nashville (the Cumberland) and Chattanooga (the Tennessee).
+
+So buckle tight your pfd, check your knots on your bow and stern lines, adjust your VHF Marine Radio to channel 13, strap your maps down to your vessel in a waterproof viewer, get a firm grip on your paddle and strike out down the greatest waterway in America starting from its greatest inland port.
+
+---
+
+## Glacial Interlude
+
+> "Take any natural process, however slow it might appear, and give it enough time, and it would add up to profound change." --Charles Lydell, *Principles of Geology*
+
+Looking at any relief map of the Middle Mississippi reveals the ancient flow of the big rivers in their rampage through middle America following the melting of the Canadian ice cap. You can see it on USGS topographic maps, or DeLorme's Atlas. Heck, you can even see it on Google earth. And what's more, it becomes radically enlarged at present day St. Louis where the big rivers come together. Forgive me this side channel, but it helps explain the present day geography of the Middle/Lower Mississippi alluvial valley.
+
+Several thousand years ago this confluence was a mad conflagration of glacial meltwater, with the retreat of the Laurentide Ice Sheet, each of the big three rivers the Missouri, the Illinois, the Mississippi, twenty to thirty times their present sizes, each barreling down their respective valleys with destructive chaotic madness and smashing into each other in the present vicinity of Portage De Sioux, the Upper Mississippi passing present day Hannibal at ten to twelve miles and hour and filling its valley bluff to bluff, a four mile wide madcap of fast whitewater, the 2-mile wide Illinois slamming in sideways from the northeast after being squeezed through the limestone cliffs and bluffs which narrow above Grafton, the collision of water was a monstrous confusion of converging channels with ten-foot tall standing waves chaotically ricocheting off one another in choppy convoluted patterns, a scene that would make today's lava falls of the Grand Canyon look like child's play in comparison.
+
+This jumping mass of ice cold glacial waters swept across Portage de Sioux completely submerging the flatlands as the waves rebounded back and forth and the variegated channels surged past one another creating powerful eddies and deadly whirlpools that sucked down giant bison, wooly mammoths, saber toothed tigers and sloths, and even the 500 pound beavers of that era would not be able to negotiate. To think of crossing would be madness, suicidal, even for the best swimmer. Only the strongest fish could handle these waters. All others were swept away or drowned. The megafauna kept to their respective sides of the river, and only found connections hundreds of miles upstream where things were calmer and the waterways narrower, maybe a mile wide instead of five.
+
+The combined Upper Miss/Illinois now swept across Portage de Sioux in a crashing, rolling mass full of gravel, rocks, boulders even, roaring over the sudden shallows that now are the fertile bottomland fields downstream of Old Monroe, past St. Charles across Orchard Farm and down past Alton to the present day location of the confluence, at the point of the St. Louis bulge. The waters calmed slightly as they widened and flowed over the shallows, but also any waves were attenuated in the shallow waters, and so what was a ten foot wave in deeper water might rise to fifteen feet and crash over in repeated arrays of foamy waves several miles wide, something like the present day Pororoca of the Amazon, that must have appeared and disappeared in seemingly endless fields of foamy white waves, responding to giant fluctuations of water volume.
+
+And then an even louder and madder roaring could be heard further to the south towards the rising bluffs now inhabited by greater St. Louis. A two-mile wide tongue of sediment laden brown water rocketed out of the Missouri valley, past the short rise that St. Charles now sits, with the Florissant Bluffs (St. Louis) to the south and smashed into the ten mile wide Mississippi with greater force and madness than the Illinois had further up. It was the Missouri, reaching far to the west, thousands of miles.
+
+The Missouri River was considered the leading edge of the Canadian Ice cap, and the Canadian ice cap in its entirety was as large as present day Antarctica. So the Missouri probably carried more water volume than all the others, collecting all of the melting ice water and great plains sediment from the Rocky Mountains downstream, a two thousand-mile long funnel, and when it reached the present day bluffs at Kansas City, and was thrust across what is now Missouri, to go swirling and whirling back and forth and up and down, and all ways imaginable within the five mile wide floodplain, when it flowed into the last bluffs at present day St. Charles, it all was concentrated into this one opening, and then exploded, as it were unleashed, it hit the Mississippi with unimaginable more impact than any other confluence of rivers ever experienced in the Americas north or south.
+
+Water flow at St. Louis might have approached 5 million CFS at the height of the ice cap melt, and 15-20 million CFS below the mouth of the Ohio, something like the present day flow of the Amazon River as it flows into the Atlantic Ocean.
+
+The engorged Missouri smashed into the Mississippi with the violence of stampeding herd of bison and shoved the waters back rolling and tumbling across the countryside across Portage de Sioux, and like all rivers the mixing was angry, violent, uneven, waters mashing, smashing and swirling this way and that, the Mississippi darker greyer perhaps, the Missouri browner, redder, oranger, the demarkation line between the cold colors of one and the warmer colors of the other etched far downstream over the thick waters.
+
+The combined waters must have seemed unstoppable, and they were for several dozen miles as they raced across the top of the American Bottom -- until the Illinois hills reared up and the unavoidable force of gravity curved them on themselves in more collisions of water wild bucking channels, and made them come around on themselves to turn one hundred and eighty degrees around the rocky bluffs of St. Louis, and then even further, another quarter turn, two hundred and seventy degrees in all, until the most angry tongue of water ever seen before and seen since responded to the unassailable force of gravity to collapse over themselves, and be forced by the dolomite bluffs at the edge of the American Bottom on the east and the rising bluffs of River Hills of Missouri on the west, to be molded into one sinuous single channel, all the waters of all three rivers now squeezed together into the three-mile wide opening below what is now the JB Bridge, and then explode outwards in the more expansive valley below, to go rocking and rolling dozens of miles down the gently eastward curving valley scouring out everything in its path, and then getting squeezed again further down at Grand Tower, the excess bursting behind Fountain Bluff to accommodate the flow, the conflagration opening up again below in the wide valley below Trail of Tears, but then squeezed again where the Pawnee Hills bisect the valley below Cape Girardeau, an eruption of flow burst out of the mass to flow westward in a depressed lowlands at base of the Ozark Hills westward, to explode out and around both sides of Crowley's Ridge and on down into the Mississippi Embayment below, which was once an inlet of the Gulf of Mexico, but was refilled with glacial sediment as result.
+
+If I could be anywhere I wanted to be in the history of the earth, one of them would be on top of the Rock of Gibraltar when the azimuth broke open and 40,000 times the Niagara Falls broke into the desert rift between Europe and Africa and filled up the Mediterranean Sea. The other would be on top of the bluffs at present day Jefferson Barracks watching the glacial melt fill the Middle Mississippi Valley, or maybe on top of the Fountain Bluff down near Grand Tower, or maybe at bluff at Thebes watching the waters crash with violent crescendoes through these narrows. This scene would have looked something like the 1993 flood from the distance, but up close even that flood, the worst ever in recorded history, would seem calm and friendly compared to the gargantuan thrashing waters at the height of the glacial meltdown.
+
+If you multiplied Lower Congo River Waterfalls near Kinshasa 20 times this would hint at the scale of chaos that roiled this juncture of compression where the American Bottom narrows in half as the Illinois Bluffs approach the Missouri Bluffs below present day JB Bridge near Waverly Missouri. (PS: The Congo River is the most powerful river in Africa. During the rainy season over 1,800,000 CFS flow into the Atlantic Ocean, and alone accounts for thirteen percent of global hydropower potential.)
+
+### For the Adventurous History Buff
+
+Adventurous History Buffs who want to re-live the river of those days should wait until the big river has dropped below 10 on the St. Louis Gage and hire Big Muddy Mike for a thrilling run over the Chain of Rocks in one of his big canoes, and then try to imagine this half-mile wide cauldron of crashing thrashing waves, keepers, boils, eddies, whirlpools and general water mayhem multiplied 40 times, adding on another 20 channels about the same size, and a one or two bigger, and hundreds of smaller rip-roaring channels in the braided tapestry of the melting glacier water.
+
+---
+
+## Present Day Middle Mississippi
+
+But let's leave the thrill of riding those rapids through the ice age behind and fast forward a dozen thousand years or more to the present day and age where paddlers enjoy an entirely different river, although it can at times and at certain water levels and certain places resemble the river of yore. Today's experience on the river is radically different than what bison and saber tooth tigers encountered 15,000 years ago when it was all about survival.
+
+Expeditions on the Mississippi River today draw you into long-distance journeys of the heart, where you travel through a landscape and are changed by it. The journey by canoe becomes a metaphorical journey in the discovery of the self. And this is the greatest good, according to the Socrates, and concurred by Jesus in the New Testament.
+
+As you bob along downstream dodging buoys and towboats, you become inevitably disturbed by scenes and natural occurrences that cause you to wonder, the wonder sets off a chain of events in your imagination that might go through layers and layers of self-realization that might begin with confusion, maybe fear, maybe even terror, then back to wonder, eventually to resolve itself in realization, maybe comprehension or compassion, and then you either find yourself enlightened with some new knowledge or new appreciation, or you accept the wonders of the creation as work of the creator, and are filled with joy of experiencing beauty of the creator in everyday expressions of sand, mud, water, trees and sky, and the creatures that inhabit them.
+
+---
+
+## The River Illusion
+
+As you paddle long distance you get this weird feeling that you are journeying deep into some undiscovered wilderness, because you paddle for days on end and don't see anybody save passing towboats, and fishermen, and a few hunting camps. I call this the "river illusion."
+
+The river illusion is not uncommon amongst the muddy floodplain rivers of mid-America, like the Lower Missouri, the Lower Arkansas, and here the Lower Mississippi -- rivers with big floodplains that squelch any serious bankside ambitions. By the very power of their unpredictable flooding waters which might jump and then fall 50 vertical feet in one season industry, suburbia, and most attempts at permanent infrastructure are kept at bay, and are tempered to a minimum. The grain elevators, steel plants and power plants are confined to the few high banks, and the cities to a few high bluffs. Otherwise, you can't build it here, and as result the wild river rules a wild landscape.
+
+The river illusion gets stronger the more time you spend on the river. And if you make a long distance expedition you begin to feel that the heart and gut of America, the mid-South and the deep-South, is still a forested landscape like it was 200 years ago, when the land was still endowed with endless deep woods and the wild paradise they create, so deep and thick that squirrels could cross from the Ozarks to the Appalachians without touching the ground, as they were able to do when the country was young.
+
+---
+
+## Half Earth: Wild Places & Long Landscapes
+
+The Middle Mississippi river annually rises and falls around 30-40 feet, and the Lower Mississippi 40-50 feet, sometimes more. These wildly fluctuating rivers create an unusual condition on all their adjoining lands, in the batture, the land between the river and the levee. Because of their catastrophic flooding humankind has been able to gain foothold in only a few high places along the way, and most of the riverbanks are covered in long swaths of forests, forested islands, sandbars, mudbars, and other wild places.
+
+Inadvertently the river has protected a very long and very narrow strip of wilderness in its batture, that runs almost uninterrupted from the southern border of St. Louis all of the way down to Baton Rouge. Even Interstate Highways do not interrupt. Those big highways are built on elevated causeways above the batture to protect the highways from annual flooding. The animals pass unmolested and undetected below the endless roaring of interstate traffic.
+
+The great biologist E.O. Wilson identifies these kinds of wild places as essential "long landscapes." Long Landscapes are essential to the health of the natural world because they provide long distance migration for the species that need it. The greater Mississippi Valley provides the possibility for long migration routes to everything from American eel to white pelicans, from Louisiana black bear to monarch butterflies, from freshwater shrimp to least interior tern. Pallid sturgeon are making a remarkable comeback in the Lower Miss, and recently a paddlefish that was tagged on Moon Lake, Mississippi, was found on the Missouri River above Kansas City, which is 1354 miles by the shortest water route. The American eel migrates annually from hatching grounds in the Sargasso Sea.
+
+Of course, this fluidity affords migration for not so desirable "invasive" species like silver carp and wild boar. But we should not complain: we humanoids are the ultimate invasive species, and the river's wild magic has assisted us in the same fluid fashion!
+
+The Mississippi is the longest and narrowest wilderness in America. It is the only wilderness that is found on the doorstep of major cities (Memphis, New Orleans, St. Louis). Within minutes of putting in your canoe you can be surrounded by woods and water as provocative as any in the world. To enter it is as easy as sitting on the bank and watching the river flow. Roll up your pants and swish your feet in her waters. If you want to get deeper, get in a canoe and paddle for a day. Envelope yourself in a landscape that feels as far away as a desert wilderness or the highest mountains.
+
+E.O. Wilson proposes that we set aside half the earth to save the earth. In other words the earth's creatures depend on space to maintain its diversity and health. While this would be impossible to do in the Mississippi Valley, we can help the tattered long landscape already intact by protecting as much of the wild lands we can, especially the lowlands that already get inundated by periodic flood waters. The Long landscape of the Mississippi could possibly someday connect to the longleaf pine belt to the south with the great north woods. The North woods could connect to the Canadian/Alaskan taiga, which is one of the major pieces in "Half the Earth."
+
+I first noticed the depth of the wilderness feeling one winter's night in 2002 while paddling down the Lower Missouri towards St. Louis:
+
+> "As we paddled through the bend above Glasgow, the trees sweeping cold dark branches through the sky I was suddenly struck by our grand illusion. Our companions the trees, the sandbars, the ducks and geese, the wild turkeys, the unbroken sky and wild expanses of water: we are all contained within a long serpentine womb of wilderness. But it is only as wide as its floodplain. Man and his machines eking out a wretched existence just out of our vision. We hear his engines and gunfire, smell his foul exhaust and paddle in his sewer. But his presence is as far away as the far side of the moon. We feel alone. We feel like the river is ours, and yet we are part of the river, something much bigger than ourselves, and something much greater than our comprehension. The rivers of the Midwest and the Mid-South making meandering pieces of paradise within the destruction of mankind. If the river is an illusion, then I gladly choose this dream, and will keep dreaming as long as I can..."
+
+---
+
+## Rivergator: The Middle-Lower Mississippi River Trail
+
+Looking at a map of North America you will inevitably be drawn to the bottom center of the continent where a meandering blue line broader than any other of the blue lines gracefully loops southward and empties into the Gulf of Mexico. It reaches out with long fingers and tentacles of other skinny blue lines which branch out eastwards and westwards from the Rockies to the Alleghenies encompassing the second largest catchment basin in the world. Along the way this line carves elegant river bends and giant oxbow lakes. One of the loops goes twenty miles to make one mile.
+
+This enchanting blue line marks the Lower Mississippi River, the largest river on the continent. Its big muddy waters and wide floodplain create a paradise for paddlers, birders, and anyone else seeking the solace of the wilderness. Expansive swaths of green are seen parallel to the loopy blue line and indicate the extensive and healthy bottomland hardwood forests still surviving between the levees. (Discounting the last 235 miles of the river below Baton Rouge where it leaves the wilderness and enters the intensely industrial port of New Orleans, also known as Chemical Corridor or Cancer Alley).
+
+The origins of these waters are found upstream in America's Heartland, St. Louis, where the Upper Miss confluences with the Missouri to form the Middle Miss. The Middle Miss separates the Pawnee Hills from the Ozarks and then meets the green waters of the Ohio at the southern tip of Illinois to form the Lower Miss. It is now the biggest volume water in this quadrant of the earth.
+
+You can trace this mysterious curvy blue line deep into the gut of America, the Deep South, down to the Gulf Coast. This valley was once an inlet of the Gulf of Mexico, then a glacial floodplain, and later a thriving jungle of 22 million acres. Even after it was settled, its forests cut, its back channels cut off and main channel vigorously maintained; even still the river rules the landscape with unimaginable power, annually rising and falling fifty vertical feet with fluctuations of millions of cubic feet per second, which prepares the stage for an unlikely setting in wilderness travel.
+
+---

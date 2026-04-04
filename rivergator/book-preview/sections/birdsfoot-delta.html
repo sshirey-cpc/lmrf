@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birdsfoot Delta — The Rivergator</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;background:#f8f6f2;color:#1a1a1a}
+.site-header{background:#1B4965;color:white;padding:16px 20px}
+.site-header h1{font-size:22px}.site-header h1 a{color:white;text-decoration:none}
+.site-nav{background:#15374d;display:flex;justify-content:center;flex-wrap:wrap}
+.site-nav a{color:#a8cce0;text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.5px;padding:12px 20px}
+.site-nav a:hover,.site-nav a.active{color:white;background:rgba(255,255,255,0.1)}
+.breadcrumb{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#888;padding:12px 20px;max-width:1100px;margin:0 auto}
+.breadcrumb a{color:#1B4965;text-decoration:none}
+.section-hero{max-width:1100px;margin:0 auto;padding:0 20px 24px}
+.section-hero h1{font-size:32px;color:#1B4965;margin-bottom:4px}
+.section-hero .mile-range{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#888;font-style:italic}
+.section-stats{display:flex;gap:24px;padding:16px 0;border-top:1px solid #e0ddd6;border-bottom:1px solid #e0ddd6;margin-bottom:20px}
+.section-stat{text-align:center}.section-stat .num{font-family:'Helvetica Neue',Arial,sans-serif;font-size:22px;font-weight:700;color:#1B4965}.section-stat .label{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.5px}
+.section-layout{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:1fr 340px;gap:24px}
+.section-map{height:450px;border-radius:8px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);position:relative}
+#map{width:100%;height:100%}
+.map-style-toggle{position:absolute;top:12px;left:12px;z-index:10;display:flex;background:white;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.3);overflow:hidden}
+.map-style-toggle button{border:none;background:white;color:#333;padding:12px 20px;font-size:14px;font-weight:700;cursor:pointer}
+.map-style-toggle button.active{background:#1B4965;color:white}
+.map-style-toggle button:hover:not(.active){background:#e0eef5}
+.map-style-toggle button:not(:last-child){border-right:1px solid #ddd}
+.map-legend{display:flex;gap:16px;padding:10px 0;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#666}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+.chapter-list{background:white;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden}
+.chapter-list-header{background:#1B4965;color:white;padding:14px 18px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.chapter-card{display:block;padding:12px 16px;border-bottom:1px solid #eee;cursor:pointer;transition:background 0.15s}
+.chapter-card:hover{background:#f0f5f8}
+.chapter-card.highlighted{background:#dceef8;border-left:4px solid #1B4965}
+.chapter-card h3{font-size:15px;color:#1B4965;margin:0 0 2px}.chapter-card .chapter-meta{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999}
+.chapter-type{display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-bottom:4px}
+.section-nav{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:flex;justify-content:space-between}
+.section-nav a{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#1B4965;text-decoration:none;padding:10px 16px;border:1px solid #d0d0d0;border-radius:6px}.section-nav a:hover{background:#e0eef5}
+.site-footer{text-align:center;padding:24px 20px;color:#999;font-size:13px;border-top:1px solid #e0ddd6}.site-footer a{color:#1B4965;text-decoration:none}
+.mapboxgl-popup-content{padding:10px 14px;border-radius:6px;max-width:240px}.popup-title{font-weight:700;color:#1B4965;font-size:13px}.popup-detail{font-size:11px;color:#666;margin-top:2px}.popup-link{display:block;margin-top:6px;font-size:12px;color:#1B4965;font-weight:600;text-decoration:none}
+@media(max-width:768px){.section-layout{grid-template-columns:1fr}.section-map{height:300px}.section-hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="site-header"><h1><a href="http://35.188.103.101">The Rivergator</a></h1></header>
+<nav class="site-nav"><a href="http://35.188.103.101" class="active">River Log</a><a href="#">Paddler's Guide</a><a href="#">Resources</a><a href="#">About</a></nav>
+<div class="breadcrumb"><a href="http://35.188.103.101">River Log</a> &rsaquo; Birdsfoot Delta</div>
+<div class="section-hero">
+<h1>Birdsfoot Delta</h1>
+<div class="mile-range">Mile 10–0</div>
+<div class="section-stats">
+<div class="section-stat"><div class="num">28</div><div class="label">Markers</div></div>
+</div>
+</div>
+<div class="section-layout">
+<div>
+<div class="section-map"><div id="map"></div>
+<div class="map-style-toggle"><button class="active" id="btn-terrain">Terrain</button><button id="btn-satellite">Satellite</button></div>
+</div>
+<div class="map-legend">
+<div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div> Access</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div> Camping</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Hazard</div>
+<div class="legend-item"><div class="legend-dot" style="background:#3498db"></div> Bridge/Creek</div>
+<div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div> Town</div>
+</div>
+</div>
+<div class="chapter-list"><div class="chapter-list-header">Mile Markers</div><div id="marker-list" style="max-height:400px;overflow-y:auto;"></div></div>
+</div>
+<div class="section-nav"><a href="http://35.188.103.101/sections/baton-rouge-to-venice.html">&larr; Baton Rouge to Venice</a><span></span></div>
+<footer class="site-footer"><p>The Rivergator &copy; <a href="https://lowermsfoundation.org">Lower Mississippi River Foundation</a></p><p style="margin-top:4px">Written by John Ruskey</p></footer>
+<script>
+mapboxgl.accessToken='pk.eyJ1Ijoic3NoaXJleTc2IiwiYSI6ImNtbmdmeHphNDA4aW8yd29wbWgxYTY3cWcifQ.34MAJqDY8qcKm_48AMQuNQ';
+const markers=[{mile:20.2,bank:"LBD",name:"End of the Jetty/End of",lng:-89.45551,lat:29.36061,type:"other",slug:"mile-20-2-end-of-the-jettyend"},{mile:18.0,bank:"LBD",name:"Associated Branch Pilots, Southwest Pass Station W",lng:-89.42471,lat:29.35621,type:"town",slug:"mile-18-0-associated-branch-pilots-southwest"},{mile:14.5,bank:"RBD",name:"Dredge Piles Opposite Burrwood Bayou some humongou",lng:-89.38341,lat:29.31741,type:"confluence",slug:"mile-14-5-dredge-piles-opposite-burrwood"},{mile:14.2,bank:"LBD",name:"East Jetty End",lng:-89.37741,lat:29.31741,type:"other",slug:"mile-14-2-east-jetty-end"},{mile:13.5,bank:"RBD",name:"West Jetty End Best route",lng:-89.38341,lat:29.31741,type:"other",slug:"mile-13-5-west-jetty-end-best"},{mile:12.8,bank:"LBD",name:"North Pass Island Pass",lng:-89.36791,lat:29.30551,type:"camping",slug:"mile-12-8-north-pass-island-pass"},{mile:12.2,bank:"LBD",name:"Opening",lng:-89.35881,lat:29.29341,type:"other",slug:"mile-12-2-opening"},{mile:12.1,bank:"LBD",name:"Tiny Bayou Opening",lng:-89.35881,lat:29.29341,type:"confluence",slug:"mile-12-1-tiny-bayou-opening"},{mile:11.8,bank:"LBD",name:"Bayou Opening (to Backside of Upper South",lng:-89.35881,lat:29.29341,type:"confluence",slug:"mile-11-8-bayou-opening-to-backside"},{mile:11.5,bank:"LBD",name:"Sandbars at Mouth of Baptiste Collette Bayou",lng:-89.35881,lat:29.29341,type:"camping",slug:"mile-11-5-sandbars-at-mouth-of"},{mile:11.4,bank:"LBD",name:"Shell Beaches at Mouth of Baptiste Collette",lng:-89.34911,lat:29.28131,type:"confluence",slug:"mile-11-4-shell-beaches-at-mouth"},{mile:10.4,bank:"RBD",name:"Grand Pass U.S",lng:-89.34421,lat:29.27061,type:"confluence",slug:"mile-10-4-grand-pass-us"},{mile:10.2,bank:"RBD",name:"Grand Pass Island The highest ground",lng:-89.34421,lat:29.27061,type:"camping",slug:"mile-10-2-grand-pass-island-the"},{mile:9.8,bank:"RBD",name:"WARNING: Iron Pilings",lng:-89.34421,lat:29.27061,type:"other",slug:"mile-9-8-warning-iron-pilings"},{mile:8.9,bank:"LBD",name:"Pogo Producing Co., E-3 Boat Landing Pogo",lng:-89.32611,lat:29.26121,type:"access_point",slug:"mile-8-9-pogo-producing-co-e3"},{mile:6.9,bank:"RBD",name:"Un-Named Pass 6.7 - 1.5 Pilottown Anchorage",lng:-89.30801,lat:29.24081,type:"town",slug:"mile-6-9-unnamed-pass-67-15"},{mile:6.2,bank:"LBD",name:"Weber Marine, Sunshine Bridge Dry Bulk Transfer",lng:-89.29231,lat:29.22911,type:"bridge",slug:"mile-6-2-weber-marine-sunshine-bridge"},{mile:5.5,bank:"RBD",name:"Mouth of Southeast Pass Southeast Pass splinters",lng:-89.29831,lat:29.22911,type:"confluence",slug:"mile-5-5-mouth-of-southeast-pass"},{mile:4.9,bank:"LBD",name:"Mary Bower’s Pass",lng:-89.28411,lat:29.21651,type:"confluence",slug:"mile-4-9-mary-bowers-pass"},{mile:4.8,bank:"RBD",name:"New Pass",lng:-89.29011,lat:29.21651,type:"confluence",slug:"mile-4-8-new-pass"},{mile:4.5,bank:"LBD",name:"Burrwood Bayou (Top Entrance) Alternate route to",lng:-89.27631,lat:29.20381,type:"confluence",slug:"mile-4-5-burrwood-bayou-top-entrance"},{mile:3.4,bank:"LBD",name:"Picnic/Camping Spot",lng:-89.26841,lat:29.19101,type:"camping",slug:"mile-3-4-picniccamping-spot"},{mile:2.9,bank:"LBD",name:"Cubit’s Gap Many enticing routes",lng:-89.26841,lat:29.19101,type:"other",slug:"mile-2-9-cubits-gap-many-enticing"},{mile:2.5,bank:"RBD",name:"Fimbel Pass Fimbel Pass",lng:-89.26691,lat:29.17791,type:"confluence",slug:"mile-2-5-fimbel-pass-fimbel-pass-2"},{mile:2.4,bank:"LBD",name:"Shell Pipeline Co., Pilottown Wharf",lng:-89.26091,lat:29.17791,type:"town",slug:"mile-2-4-shell-pipeline-co-pilottown"},{mile:1.9,bank:"LBD",name:"Associated Branch Pilots and Crescent River Port",lng:-89.26091,lat:29.17791,type:"confluence",slug:"mile-1-9-associated-branch-pilots-and"},{mile:1.5,bank:"RBD",name:"Lower Shallow Island",lng:-89.26691,lat:29.17791,type:"camping",slug:"mile-1-5-lower-shallow-island"},{mile:0.5,bank:"RBD",name:"Upper Shallow Island",lng:-89.25881,lat:29.15061,type:"camping",slug:"mile-0-5-upper-shallow-island"}];
+const typeColors={access_point:'#2ecc71',camping:'#e67e22',hazard:'#e74c3c',bridge:'#3498db',town:'#9b59b6',confluence:'#3498db',other:'#7f8c8d'};
+const riverCoords=[[-89.60353676898701,29.44453233833258],[-89.52825101138718,29.362639588877492],[-89.45167619111756,29.362729991693662],[-89.35811089607556,29.287392310820792],[-89.28009653813953,29.204079495009786]];
+const map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/outdoors-v12',center:[-89.35, 29.15],zoom:10});
+map.addControl(new mapboxgl.NavigationControl(),'top-right');
+function addRiverLine(){if(map.getSource('river'))return;map.addSource('river',{type:'geojson',data:{type:'Feature',geometry:{type:'LineString',coordinates:riverCoords}}});map.addLayer({id:'river-glow',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':6,'line-opacity':0.3,'line-blur':2}});map.addLayer({id:'river-line',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':3,'line-opacity':0.8}})}
+const markerEls={},mapMarkers={};
+function highlightMarker(mile){document.querySelectorAll('.chapter-card.highlighted').forEach(el=>el.classList.remove('highlighted'));const card=document.getElementById('card-'+mile);if(card){card.classList.add('highlighted');const list=document.getElementById('marker-list');const cardTop=card.offsetTop-list.offsetTop;list.scrollTo({top:cardTop-list.clientHeight/3,behavior:'smooth'})}Object.keys(markerEls).forEach(k=>{const el=markerEls[k];if(k==mile){el.style.width='18px';el.style.height='18px';el.style.border='3px solid #1B4965'}else{el.style.width='12px';el.style.height='12px';el.style.border='2px solid white'}})}
+function addMarkers(){const list=document.getElementById('marker-list');list.innerHTML='';markers.forEach(m=>{const color=typeColors[m.type]||'#7f8c8d';const el=document.createElement('div');el.style.cssText='background:'+color+';width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.3);cursor:pointer;transition:all 0.2s;';markerEls[m.mile]=el;const popup=new mapboxgl.Popup({offset:10}).setHTML('<div class="popup-title">Mile '+m.mile+' '+m.bank+'</div><div class="popup-detail">'+m.name+'</div><a class="popup-link" href="http://35.188.103.101/'+m.slug+'/">Read guide &rarr;</a>');const marker=new mapboxgl.Marker(el).setLngLat([m.lng,m.lat]).setPopup(popup).addTo(map);mapMarkers[m.mile]=marker;el.addEventListener('click',()=>highlightMarker(m.mile));const card=document.createElement('div');card.className='chapter-card';card.id='card-'+m.mile;card.style.cursor='pointer';card.innerHTML='<div class="chapter-type" style="background:'+color+'22;color:'+color+';border:1px solid '+color+'44;">Mile '+m.mile+' '+m.bank+'</div><h3>'+m.name+'</h3><a href="http://35.188.103.101/'+m.slug+'/" style="font-size:12px;color:#1B4965;font-weight:600;text-decoration:none;" onclick="event.stopPropagation()">Read guide &rarr;</a>';card.addEventListener('click',()=>{map.flyTo({center:[m.lng,m.lat],zoom:12,duration:1200});Object.values(mapMarkers).forEach(mk=>{if(mk.getPopup().isOpen())mk.togglePopup()});marker.togglePopup();highlightMarker(m.mile)});list.appendChild(card)})}
+map.on('load',()=>{addRiverLine();addMarkers()});
+document.getElementById('btn-terrain').onclick=()=>{map.setStyle('mapbox://styles/mapbox/outdoors-v12');setActive('btn-terrain');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+document.getElementById('btn-satellite').onclick=()=>{map.setStyle('mapbox://styles/mapbox/satellite-streets-v12');setActive('btn-satellite');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+function setActive(id){document.querySelectorAll('.map-style-toggle button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active')}
+</script>
+</body>
+</html>

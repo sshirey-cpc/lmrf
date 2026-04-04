@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caruthersville to Memphis — The Rivergator</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;background:#f8f6f2;color:#1a1a1a}
+.site-header{background:#1B4965;color:white;padding:16px 20px}
+.site-header h1{font-size:22px}.site-header h1 a{color:white;text-decoration:none}
+.site-nav{background:#15374d;display:flex;justify-content:center;flex-wrap:wrap}
+.site-nav a{color:#a8cce0;text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.5px;padding:12px 20px}
+.site-nav a:hover,.site-nav a.active{color:white;background:rgba(255,255,255,0.1)}
+.breadcrumb{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#888;padding:12px 20px;max-width:1100px;margin:0 auto}
+.breadcrumb a{color:#1B4965;text-decoration:none}
+.section-hero{max-width:1100px;margin:0 auto;padding:0 20px 24px}
+.section-hero h1{font-size:32px;color:#1B4965;margin-bottom:4px}
+.section-hero .mile-range{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#888;font-style:italic}
+.section-stats{display:flex;gap:24px;padding:16px 0;border-top:1px solid #e0ddd6;border-bottom:1px solid #e0ddd6;margin-bottom:20px}
+.section-stat{text-align:center}.section-stat .num{font-family:'Helvetica Neue',Arial,sans-serif;font-size:22px;font-weight:700;color:#1B4965}.section-stat .label{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.5px}
+.section-layout{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:1fr 340px;gap:24px}
+.section-map{height:450px;border-radius:8px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);position:relative}
+#map{width:100%;height:100%}
+.map-style-toggle{position:absolute;top:12px;left:12px;z-index:10;display:flex;background:white;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.3);overflow:hidden}
+.map-style-toggle button{border:none;background:white;color:#333;padding:12px 20px;font-size:14px;font-weight:700;cursor:pointer}
+.map-style-toggle button.active{background:#1B4965;color:white}
+.map-style-toggle button:hover:not(.active){background:#e0eef5}
+.map-style-toggle button:not(:last-child){border-right:1px solid #ddd}
+.map-legend{display:flex;gap:16px;padding:10px 0;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#666}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+.chapter-list{background:white;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden}
+.chapter-list-header{background:#1B4965;color:white;padding:14px 18px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.chapter-card{display:block;padding:12px 16px;border-bottom:1px solid #eee;cursor:pointer;transition:background 0.15s}
+.chapter-card:hover{background:#f0f5f8}
+.chapter-card.highlighted{background:#dceef8;border-left:4px solid #1B4965}
+.chapter-card h3{font-size:15px;color:#1B4965;margin:0 0 2px}.chapter-card .chapter-meta{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999}
+.chapter-type{display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-bottom:4px}
+.section-nav{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:flex;justify-content:space-between}
+.section-nav a{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#1B4965;text-decoration:none;padding:10px 16px;border:1px solid #d0d0d0;border-radius:6px}.section-nav a:hover{background:#e0eef5}
+.site-footer{text-align:center;padding:24px 20px;color:#999;font-size:13px;border-top:1px solid #e0ddd6}.site-footer a{color:#1B4965;text-decoration:none}
+.mapboxgl-popup-content{padding:10px 14px;border-radius:6px;max-width:240px}.popup-title{font-weight:700;color:#1B4965;font-size:13px}.popup-detail{font-size:11px;color:#666;margin-top:2px}.popup-link{display:block;margin-top:6px;font-size:12px;color:#1B4965;font-weight:600;text-decoration:none}
+@media(max-width:768px){.section-layout{grid-template-columns:1fr}.section-map{height:300px}.section-hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="site-header"><h1><a href="http://35.188.103.101">The Rivergator</a></h1></header>
+<nav class="site-nav"><a href="http://35.188.103.101" class="active">River Log</a><a href="#">Paddler's Guide</a><a href="#">Resources</a><a href="#">About</a></nav>
+<div class="breadcrumb"><a href="http://35.188.103.101">River Log</a> &rsaquo; Caruthersville to Memphis</div>
+<div class="section-hero">
+<h1>Caruthersville to Memphis</h1>
+<div class="mile-range">Mile 850–737</div>
+<div class="section-stats">
+<div class="section-stat"><div class="num">39</div><div class="label">Markers</div></div>
+</div>
+</div>
+<div class="section-layout">
+<div>
+<div class="section-map"><div id="map"></div>
+<div class="map-style-toggle"><button class="active" id="btn-terrain">Terrain</button><button id="btn-satellite">Satellite</button></div>
+</div>
+<div class="map-legend">
+<div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div> Access</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div> Camping</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Hazard</div>
+<div class="legend-item"><div class="legend-dot" style="background:#3498db"></div> Bridge/Creek</div>
+<div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div> Town</div>
+</div>
+</div>
+<div class="chapter-list"><div class="chapter-list-header">Mile Markers</div><div id="marker-list" style="max-height:400px;overflow-y:auto;"></div></div>
+</div>
+<div class="section-nav"><a href="http://35.188.103.101/sections/stlouis-to-caruthersville.html">&larr; St. Louis to Caruthersville</a><a href="http://35.188.103.101/section-preview.html">Memphis to Helena &rarr;</a></div>
+<footer class="site-footer"><p>The Rivergator &copy; <a href="https://lowermsfoundation.org">Lower Mississippi River Foundation</a></p><p style="margin-top:4px">Written by John Ruskey</p></footer>
+<script>
+mapboxgl.accessToken='pk.eyJ1Ijoic3NoaXJleTc2IiwiYSI6ImNtbmdmeHphNDA4aW8yd29wbWgxYTY3cWcifQ.34MAJqDY8qcKm_48AMQuNQ';
+const markers=[{mile:850.0,bank:"LBD",name:"- 737 Options",lng:-89.68001,lat:36.23411,type:"other",slug:"mile-850-0-737-options"},{mile:849.0,bank:"RBD",name:"Mouth of the Caruthersville Harbor",lng:-89.68771,lat:36.22111,type:"access_point",slug:"mile-849-0-mouth-of-the-caruthersville-3"},{mile:848.0,bank:"RBD",name:"Trinity Barge Fabrication Plant",lng:-89.67461,lat:36.21131,type:"camping",slug:"mile-848-0-trinity-barge-fabrication-plant-2"},{mile:847.0,bank:"RBD",name:"Blaker Towhead Long distance paddlers needing",lng:-89.66001,lat:36.20291,type:"camping",slug:"mile-847-0-blaker-towhead-long-distance-2"},{mile:846.0,bank:"RBD",name:"Isle of Capri Lady Luck Casino",lng:-89.64641,lat:36.19361,type:"other",slug:"mile-846-0-isle-of-capri-lady-3"},{mile:842.0,bank:"LBD",name:"that sometimes create",lng:-89.59181,lat:36.15241,type:"other",slug:"mile-842-0-that-sometimes-create-2"},{mile:840.0,bank:"LBD",name:"Paddling time: 2-5 hours (depending",lng:-89.59441,lat:36.12401,type:"other",slug:"mile-840-0-paddling-time-25-hours"},{mile:823.0,bank:"LBD",name:"Island 21",lng:-89.68001,lat:35.94461,type:"camping",slug:"mile-823-0-island-21"},{mile:819.3,bank:"LBD",name:"(which would make",lng:-89.63921,lat:35.90241,type:"other",slug:"mile-819-3-which-would-make"},{mile:817.7,bank:"LBD",name:"Tamm’s Landing and Ed Jones Boat Ramp",lng:-89.64241,lat:35.88821,type:"access_point",slug:"mile-817-7-tamms-landing-and-ed"},{mile:814.0,bank:"LBD",name:"Nebraska Landing",lng:-89.69931,lat:35.89761,type:"access_point",slug:"mile-814-0-nebraska-landing-2"},{mile:797.0,bank:"LBD",name:"Shoaf Landing Primitive Gravel/Sand/Mud Landing",lng:-89.77971,lat:35.77271,type:"access_point",slug:"mile-797-0-shoaf-landing-primitive-gravelsandmud"},{mile:796.0,bank:"LBD",name:"Ashport-Keyes Boat Ramp Well built concrete ramp",lng:-89.79351,lat:35.76361,type:"access_point",slug:"mile-796-0-ashportkeyes-boat-ramp-well"},{mile:792.0,bank:"LBD",name:"and hug the left bank all of",lng:-89.85661,lat:35.73751,type:"other",slug:"mile-792-0-and-hug-the-left"},{mile:785.0,bank:"RBD",name:"Osceola Arkansas",lng:-89.94371,lat:35.68371,type:"other",slug:"mile-785-0-osceola-arkansas-2"},{mile:783.5,bank:"RBD",name:"Sans Souci Boat Ramp Excellent Boat Ramp",lng:-89.93741,lat:35.67021,type:"access_point",slug:"mile-783-5-sans-souci-boat-ramp"},{mile:782.0,bank:"LBD",name:"Driver Island Small forested island",lng:-89.90441,lat:35.65271,type:"camping",slug:"mile-782-0-driver-island-small-forested"},{mile:779.8,bank:"LBD",name:"Old Mouth of the Forked Deer Oftentimes",lng:-89.87441,lat:35.63781,type:"confluence",slug:"mile-779-8-old-mouth-of-the"},{mile:779.0,bank:"RBD",name:"(opposite the Old Channel of",lng:-89.88031,lat:35.62571,type:"other",slug:"mile-779-0-opposite-the-old-channel"},{mile:778.0,bank:"RBD",name:"Sunrise Towhead - Island 34 Giant privately-owned",lng:-89.89471,lat:35.61781,type:"camping",slug:"mile-778-0-sunrise-towhead-island-34"},{mile:773.5,bank:"LBD",name:"Mouth of the Hatchie River",lng:-89.90141,lat:35.56201,type:"confluence",slug:"mile-773-5-mouth-of-the-hatchie-2"},{mile:771.0,bank:"LBD",name:"Randolph Landing Directly behind Angelo Towhead",lng:-89.90101,lat:35.51961,type:"access_point",slug:"mile-771-0-randolph-landing-directly-behind-2"},{mile:768.9,bank:"LBD",name:"Richardon’s Landing All that remains of Richardon’",lng:-89.93271,lat:35.51791,type:"access_point",slug:"mile-768-9-richardons-landing-all-that-2"},{mile:768.0,bank:"LBD",name:"Randolph’s Landing/Duvall’s Boat Ramp Wide concret",lng:-89.94981,lat:35.52131,type:"access_point",slug:"mile-768-0-randolphs-landingduvalls-boat-ramp"},{mile:767.0,bank:"RBD",name:"Island 35 Boat Ramp Abandoned ramp",lng:-89.97341,lat:35.52321,type:"access_point",slug:"mile-767-0-island-35-boat-ramp-2"},{mile:766.0,bank:"LBD",name:"Below Richardson Landing Dikes & Bar Huge",lng:-89.98491,lat:35.52131,type:"access_point",slug:"mile-766-0-below-richardson-landing-dikes"},{mile:758.0,bank:"LBD",name:"Densford Bar and Dikes/Hen",lng:-90.01161,lat:35.42371,type:"camping",slug:"mile-758-0-densford-bar-and-dikeshen"},{mile:757.8,bank:"RBD",name:"and jump into the first opening",lng:-90.01761,lat:35.42371,type:"other",slug:"mile-757-8-and-jump-into-the"},{mile:756.2,bank:"RBD",name:"which",lng:-90.04891,lat:35.41021,type:"other",slug:"mile-756-2-which"},{mile:754.0,bank:"LBD",name:"Meeman Shelby Forest State Park Meeman Shelby",lng:-90.06831,lat:35.39041,type:"other",slug:"mile-754-0-meeman-shelby-forest-state"},{mile:752.7,bank:"LBD",name:"Shelby Forest Boat Ramp Concrete revetment ramp",lng:-90.07681,lat:35.37761,type:"access_point",slug:"mile-752-7-shelby-forest-boat-ramp-3"},{mile:749.0,bank:"LBD",name:"Hickman Bar 35.269448,-90.084801&spn=0.173228,0.22",lng:-90.10101,lat:35.32371,type:"camping",slug:"mile-749-0-hickman-bar-3526944890084801spn0173228022539"},{mile:746.0,bank:"LBD",name:"and topsides Middle Hickman LBD 745",lng:-90.10431,lat:35.28041,type:"other",slug:"mile-746-0-and-topsides-middle-hickman"},{mile:745.0,bank:"LBD",name:"Middle Hickman Top end of Middle Hickman",lng:-90.10031,lat:35.26631,type:"other",slug:"mile-745-0-middle-hickman-top-end"},{mile:744.0,bank:"LBD",name:"Lower Hickman Lower Hickman",lng:-90.09321,lat:35.25311,type:"other",slug:"mile-744-0-lower-hickman-lower-hickman"},{mile:743.0,bank:"LBD",name:"Below Lower Hickman",lng:-90.08541,lat:35.24011,type:"other",slug:"mile-743-0-below-lower-hickman"},{mile:740.6,bank:"LBD",name:"Loosahatchie River The mouth of",lng:-90.06731,lat:35.21521,type:"confluence",slug:"mile-740-6-loosahatchie-river-the-mouth"},{mile:738.4,bank:"LBD",name:"Mud Island Upper Boat Ramp Concrete boat",lng:-90.06011,lat:35.17291,type:"access_point",slug:"mile-738-4-mud-island-upper-boat"},{mile:736.0,bank:"LBD",name:"4th Chickasaw Bluff: Memphis",lng:-90.06191,lat:35.14391,type:"other",slug:"mile-736-0-4th-chickasaw-bluff-memphis"}];
+const typeColors={access_point:'#2ecc71',camping:'#e67e22',hazard:'#e74c3c',bridge:'#3498db',town:'#9b59b6',confluence:'#3498db',other:'#7f8c8d'};
+const riverCoords=[[-89.56263460021538,36.27617154329638],[-89.58428953667638,36.24213293639877],[-89.65550302358247,36.245939933779674],[-89.6851284303868,36.23460779692198],[-89.66274562228872,36.20661159252912],[-89.62394334364714,36.17936172197149],[-89.58978619764419,36.14219858369154],[-89.62152473754249,36.111075575615644],[-89.65728201303516,36.09732370480141],[-89.68203601775046,36.06644016434752],[-89.69019701807058,36.02890989059313],[-89.71099862148701,36.0035744841623],[-89.72129915548898,35.9721687448593],[-89.6948578137345,35.95222534181827],[-89.6536131335147,35.92183687124687],[-89.68106980600051,35.89172353121231],[-89.71772621693918,35.902858131804614],[-89.7604511608471,35.89328906074377],[-89.75282835648505,35.86018465485448],[-89.70235474076905,35.831829518844245],[-89.73872834858153,35.79741484350424],[-89.78862922721846,35.76946343580229],[-89.8384875724233,35.74349502870769],[-89.90097085500423,35.73131442336312],[-89.93731839730043,35.71112641749874],[-89.93789686203776,35.68033141207018],[-89.90005398322128,35.65696027545262],[-89.88329337655033,35.622386069803035],[-89.90379757921721,35.57707719382425],[-89.90034244303882,35.548075254866944],[-89.91166684356396,35.517704381287025],[-89.9460498529788,35.518969646968934],[-90.01239967049385,35.500094573666274],[-90.00009433123799,35.46707836793228],[-89.9952019957079,35.44565836421419],[-90.01532406583269,35.423620425492274],[-90.04485827297444,35.41258215491631],[-90.07939441370416,35.37709881318981],[-90.10155701687832,35.33008393646709],[-90.1067234158252,35.29537492988413],[-90.10121827925268,35.263890923562684],[-90.07334366827585,35.222256383954694],[-90.06347619680098,35.19117431108425],[-90.06540246145124,35.148275969666045],[-90.09100066693793,35.1203580962551],[-90.14443881561799,35.131932762768415],[-90.17342968933653,35.116075491856996],[-90.18027242096036,35.070911949243786],[-90.19357828940663,35.04060794268977],[-90.22608169715862,35.02278113772237],[-90.26588144173552,35.01909153520744]];
+const map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/outdoors-v12',center:[-89.8, 35.7],zoom:8});
+map.addControl(new mapboxgl.NavigationControl(),'top-right');
+function addRiverLine(){if(map.getSource('river'))return;map.addSource('river',{type:'geojson',data:{type:'Feature',geometry:{type:'LineString',coordinates:riverCoords}}});map.addLayer({id:'river-glow',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':6,'line-opacity':0.3,'line-blur':2}});map.addLayer({id:'river-line',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':3,'line-opacity':0.8}})}
+const markerEls={},mapMarkers={};
+function highlightMarker(mile){document.querySelectorAll('.chapter-card.highlighted').forEach(el=>el.classList.remove('highlighted'));const card=document.getElementById('card-'+mile);if(card){card.classList.add('highlighted');const list=document.getElementById('marker-list');const cardTop=card.offsetTop-list.offsetTop;list.scrollTo({top:cardTop-list.clientHeight/3,behavior:'smooth'})}Object.keys(markerEls).forEach(k=>{const el=markerEls[k];if(k==mile){el.style.width='18px';el.style.height='18px';el.style.border='3px solid #1B4965'}else{el.style.width='12px';el.style.height='12px';el.style.border='2px solid white'}})}
+function addMarkers(){const list=document.getElementById('marker-list');list.innerHTML='';markers.forEach(m=>{const color=typeColors[m.type]||'#7f8c8d';const el=document.createElement('div');el.style.cssText='background:'+color+';width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.3);cursor:pointer;transition:all 0.2s;';markerEls[m.mile]=el;const popup=new mapboxgl.Popup({offset:10}).setHTML('<div class="popup-title">Mile '+m.mile+' '+m.bank+'</div><div class="popup-detail">'+m.name+'</div><a class="popup-link" href="http://35.188.103.101/'+m.slug+'/">Read guide &rarr;</a>');const marker=new mapboxgl.Marker(el).setLngLat([m.lng,m.lat]).setPopup(popup).addTo(map);mapMarkers[m.mile]=marker;el.addEventListener('click',()=>highlightMarker(m.mile));const card=document.createElement('div');card.className='chapter-card';card.id='card-'+m.mile;card.style.cursor='pointer';card.innerHTML='<div class="chapter-type" style="background:'+color+'22;color:'+color+';border:1px solid '+color+'44;">Mile '+m.mile+' '+m.bank+'</div><h3>'+m.name+'</h3><a href="http://35.188.103.101/'+m.slug+'/" style="font-size:12px;color:#1B4965;font-weight:600;text-decoration:none;" onclick="event.stopPropagation()">Read guide &rarr;</a>';card.addEventListener('click',()=>{map.flyTo({center:[m.lng,m.lat],zoom:12,duration:1200});Object.values(mapMarkers).forEach(mk=>{if(mk.getPopup().isOpen())mk.togglePopup()});marker.togglePopup();highlightMarker(m.mile)});list.appendChild(card)})}
+map.on('load',()=>{addRiverLine();addMarkers()});
+document.getElementById('btn-terrain').onclick=()=>{map.setStyle('mapbox://styles/mapbox/outdoors-v12');setActive('btn-terrain');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+document.getElementById('btn-satellite').onclick=()=>{map.setStyle('mapbox://styles/mapbox/satellite-streets-v12');setActive('btn-satellite');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+function setActive(id){document.querySelectorAll('.map-style-toggle button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active')}
+</script>
+</body>
+</html>

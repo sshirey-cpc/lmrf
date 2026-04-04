@@ -1,0 +1,47 @@
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+
+% Define river blue
+\definecolor{riverblue}{HTML}{1B4965}
+\definecolor{riverlight}{HTML}{2E6F8E}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textit{\leftmark}}
+\fancyhead[RO]{\small\textit{\rightmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Chapter title styling
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{riverblue}}
+  {}
+  {0pt}
+  {\titlerule[2pt]\vspace{6pt}}
+
+% Section styling
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{riverblue}}
+  {}
+  {0pt}
+  {}
+
+% Subsection styling
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{riverlight}}
+  {}
+  {0pt}
+  {}
+
+% Reduce orphans and widows
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Image placement
+\floatplacement{figure}{H}

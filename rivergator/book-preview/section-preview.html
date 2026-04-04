@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memphis to Helena — The Rivergator</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;background:#f8f6f2;color:#1a1a1a}
+.site-header{background:#1B4965;color:white;padding:16px 20px}
+.site-header h1{font-size:22px}.site-header h1 a{color:white;text-decoration:none}
+.site-nav{background:#15374d;display:flex;justify-content:center;flex-wrap:wrap}
+.site-nav a{color:#a8cce0;text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:1.5px;padding:12px 20px}
+.site-nav a:hover,.site-nav a.active{color:white;background:rgba(255,255,255,0.1)}
+.breadcrumb{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#888;padding:12px 20px;max-width:1100px;margin:0 auto}
+.breadcrumb a{color:#1B4965;text-decoration:none}
+.section-hero{max-width:1100px;margin:0 auto;padding:0 20px 24px}
+.section-hero h1{font-size:32px;color:#1B4965;margin-bottom:4px}
+.section-hero .mile-range{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#888;font-style:italic}
+.section-stats{display:flex;gap:24px;padding:16px 0;border-top:1px solid #e0ddd6;border-bottom:1px solid #e0ddd6;margin-bottom:20px}
+.section-stat{text-align:center}.section-stat .num{font-family:'Helvetica Neue',Arial,sans-serif;font-size:22px;font-weight:700;color:#1B4965}.section-stat .label{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.5px}
+.section-layout{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:1fr 340px;gap:24px}
+.section-map{height:450px;border-radius:8px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.1);position:relative}
+#map{width:100%;height:100%}
+.map-style-toggle{position:absolute;top:12px;left:12px;z-index:10;display:flex;background:white;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.3);overflow:hidden}
+.map-style-toggle button{border:none;background:white;color:#333;padding:12px 20px;font-size:14px;font-weight:700;cursor:pointer}
+.map-style-toggle button.active{background:#1B4965;color:white}
+.map-style-toggle button:hover:not(.active){background:#e0eef5}
+.map-style-toggle button:not(:last-child){border-right:1px solid #ddd}
+.map-legend{display:flex;gap:16px;padding:10px 0;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#666}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+.chapter-list{background:white;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden}
+.chapter-list-header{background:#1B4965;color:white;padding:14px 18px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.chapter-card{display:block;padding:12px 16px;border-bottom:1px solid #eee;cursor:pointer;transition:background 0.15s}
+.chapter-card:hover{background:#f0f5f8}
+.chapter-card.highlighted{background:#dceef8;border-left:4px solid #1B4965}
+.chapter-card h3{font-size:15px;color:#1B4965;margin:0 0 2px}.chapter-card .chapter-meta{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;color:#999}
+.chapter-type{display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-bottom:4px}
+.section-nav{max-width:1100px;margin:0 auto;padding:0 20px 40px;display:flex;justify-content:space-between}
+.section-nav a{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#1B4965;text-decoration:none;padding:10px 16px;border:1px solid #d0d0d0;border-radius:6px}.section-nav a:hover{background:#e0eef5}
+.site-footer{text-align:center;padding:24px 20px;color:#999;font-size:13px;border-top:1px solid #e0ddd6}.site-footer a{color:#1B4965;text-decoration:none}
+.mapboxgl-popup-content{padding:10px 14px;border-radius:6px;max-width:240px}.popup-title{font-weight:700;color:#1B4965;font-size:13px}.popup-detail{font-size:11px;color:#666;margin-top:2px}.popup-link{display:block;margin-top:6px;font-size:12px;color:#1B4965;font-weight:600;text-decoration:none}
+@media(max-width:768px){.section-layout{grid-template-columns:1fr}.section-map{height:300px}.section-hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="site-header"><h1><a href="http://35.188.103.101">The Rivergator</a></h1></header>
+<nav class="site-nav"><a href="http://35.188.103.101" class="active">River Log</a><a href="#">Paddler's Guide</a><a href="#">Resources</a><a href="#">About</a></nav>
+<div class="breadcrumb"><a href="http://35.188.103.101">River Log</a> &rsaquo; Memphis to Helena</div>
+<div class="section-hero">
+<h1>Memphis to Helena</h1>
+<div class="mile-range">Mile 737–663</div>
+<div class="section-stats">
+<div class="section-stat"><div class="num">27</div><div class="label">Markers</div></div>
+</div>
+</div>
+<div class="section-layout">
+<div>
+<div class="section-map"><div id="map"></div>
+<div class="map-style-toggle"><button class="active" id="btn-terrain">Terrain</button><button id="btn-satellite">Satellite</button></div>
+</div>
+<div class="map-legend">
+<div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div> Access</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div> Camping</div>
+<div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Hazard</div>
+<div class="legend-item"><div class="legend-dot" style="background:#3498db"></div> Bridge/Creek</div>
+<div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div> Town</div>
+</div>
+</div>
+<div class="chapter-list"><div class="chapter-list-header">Mile Markers</div><div id="marker-list" style="max-height:400px;overflow-y:auto;"></div></div>
+</div>
+<div class="section-nav"><a href="http://35.188.103.101/sections/caruthersville-to-memphis.html">&larr; Caruthersville to Memphis</a><a href="http://35.188.103.101/sections/helena-to-greenville.html">Helena to Greenville &rarr;</a></div>
+<footer class="site-footer"><p>The Rivergator &copy; <a href="https://lowermsfoundation.org">Lower Mississippi River Foundation</a></p><p style="margin-top:4px">Written by John Ruskey</p></footer>
+<script>
+mapboxgl.accessToken='pk.eyJ1Ijoic3NoaXJleTc2IiwiYSI6ImNtbmdmeHphNDA4aW8yd29wbWgxYTY3cWcifQ.34MAJqDY8qcKm_48AMQuNQ';
+const markers=[{mile:736.0,bank:"LBD",name:"Memphis, Tennessee, Mud Island Harbor",lng:-90.06191,lat:35.14391,type:"access_point",slug:"mile-736-0-memphis-tennessee-mud-island-2"},{mile:735.0,bank:"LBD",name:"Memphis Bridges",lng:-90.06981,lat:35.13131,type:"bridge",slug:"mile-735-0-memphis-bridges"},{mile:733.0,bank:"RBD",name:"Presidents Island",lng:-90.10541,lat:35.11841,type:"camping",slug:"mile-733-0-presidents-island"},{mile:732.0,bank:"LBD",name:"Hole",lng:-90.11511,lat:35.12471,type:"other",slug:"mile-732-0-hole"},{mile:727.3,bank:"RBD",name:"The Wreck of the Raft",lng:-90.18231,lat:35.09721,type:"other",slug:"mile-727-3-the-wreck-of-the"},{mile:725.5,bank:"LBD",name:"Entrance to McKellar Lake",lng:-90.17741,lat:35.08281,type:"other",slug:"mile-725-5-entrance-to-mckellar-lake-2"},{mile:722.0,bank:"RBD",name:"Dismal Point / Ensley Bar",lng:-90.20621,lat:35.03091,type:"camping",slug:"mile-722-0-dismal-point-ensley-bar"},{mile:710.8,bank:"LBD",name:"Starr Landing Concrete ramp descending to river",lng:-90.25041,lat:34.95441,type:"access_point",slug:"mile-710-8-starr-landing-concrete-ramp"},{mile:699.5,bank:"LBD",name:"Wide well maintained boat ramp",lng:-90.35641,lat:34.85531,type:"access_point",slug:"mile-699-5-wide-well-maintained-boat"},{mile:692.5,bank:"RBD",name:"Peter's Boat Ramp",lng:-90.47701,lat:34.79671,type:"access_point",slug:"mile-692-5-peters-boat-ramp"},{mile:688.0,bank:"LBD",name:"Mhoon Landing",lng:-90.44531,lat:34.74451,type:"access_point",slug:"mile-688-0-mhoon-landing"},{mile:679.0,bank:"RBD",name:"Walnut Bend Boat Ramp (AKA Battle Axe",lng:-90.57131,lat:34.71761,type:"access_point",slug:"mile-679-0-walnut-bend-boat-ramp"},{mile:677.4,bank:"LBD",name:"The Tunica Runout",lng:-90.56561,lat:34.68871,type:"other",slug:"mile-677-4-the-tunica-runout"},{mile:672.0,bank:"RBD",name:"Mouth of the St",lng:-90.59171,lat:34.61951,type:"confluence",slug:"mile-672-0-mouth-of-the-st"},{mile:669.0,bank:"LBD",name:"Flower Lake Dikes Above 20HG (medium water)",lng:-90.55991,lat:34.58251,type:"other",slug:"mile-669-0-flower-lake-dikes-above"},{mile:665.5,bank:"LBD",name:"Trotter’s Pass",lng:-90.54131,lat:34.54481,type:"confluence",slug:"mile-665-5-trotters-pass"},{mile:663.0,bank:"RBD",name:"Buck Island (Prairie Point Towhead) Buck Island",lng:-90.58361,lat:34.51421,type:"camping",slug:"mile-663-0-buck-island-prairie-point"},{mile:662.0,bank:"LBD",name:"Helena Bridge",lng:-90.58331,lat:34.50031,type:"bridge",slug:"mile-662-0-helena-bridge"},{mile:659.4,bank:"RBD",name:"will be your final industrial hazard until",lng:-90.58921,lat:34.45801,type:"hazard",slug:"mile-659-4-will-be-your-final"},{mile:657.0,bank:"LBD",name:"Yazoo Pass",lng:-90.58071,lat:34.42971,type:"confluence",slug:"mile-657-0-yazoo-pass"},{mile:656.0,bank:"LBD",name:"East Montezuma Bar",lng:-90.58151,lat:34.41501,type:"camping",slug:"mile-656-0-east-montezuma-bar-2"},{mile:654.7,bank:"LBD",name:"Montezuma Landing Possible shuttle access to Clark",lng:-90.59091,lat:34.40241,type:"access_point",slug:"mile-654-7-montezuma-landing-possible-shuttle-2"},{mile:654.0,bank:"RBD",name:"Montezuma Towhead",lng:-90.61061,lat:34.39341,type:"camping",slug:"mile-654-0-montezuma-towhead"},{mile:652.5,bank:"LBD",name:"Friars Point Landing (unimproved)",lng:-90.63681,lat:34.38291,type:"access_point",slug:"mile-652-5-friars-point-landing-unimproved"},{mile:652.0,bank:"LBD",name:"Friars Point Friars Point",lng:-90.63681,lat:34.38291,type:"other",slug:"mile-652-0-friars-point-friars-point"},{mile:9.0,bank:"RBD",name:"Helena Harbor 663 St",lng:-89.33211,lat:29.26121,type:"access_point",slug:"mile-9-0-helena-harbor-663-st"},{mile:3.0,bank:"RBD",name:"miles up St",lng:-89.27441,lat:29.19101,type:"other",slug:"mile-3-0-miles-up-st"}];
+const typeColors={access_point:'#2ecc71',camping:'#e67e22',hazard:'#e74c3c',bridge:'#3498db',town:'#9b59b6',confluence:'#3498db',other:'#7f8c8d'};
+const riverCoords=[[-90.1067234158252,35.29537492988413],[-90.10121827925268,35.263890923562684],[-90.07334366827585,35.222256383954694],[-90.06347619680098,35.19117431108425],[-90.06540246145124,35.148275969666045],[-90.09100066693793,35.1203580962551],[-90.14443881561799,35.131932762768415],[-90.17342968933653,35.116075491856996],[-90.18027242096036,35.070911949243786],[-90.19357828940663,35.04060794268977],[-90.22608169715862,35.02278113772237],[-90.26588144173552,35.01909153520744],[-90.29757031468006,34.98265352725862],[-90.26460663712592,34.95431645659909],[-90.24593683110014,34.939873720700604],[-90.24860082909265,34.90841191448022],[-90.28059563678194,34.88816404278215],[-90.30983371069698,34.875672105861646],[-90.34707591932062,34.85409450009594],[-90.38490012934885,34.84331522901564],[-90.4258124724394,34.82709242413736],[-90.46667028240232,34.809223485924534],[-90.46542534677593,34.77493941270305],[-90.45427787483587,34.738805472822],[-90.51472115706841,34.72911986812789],[-90.54614629991688,34.740995868538384],[-90.56994050505675,34.716653796088885],[-90.56856696930923,34.69013659153862],[-90.58230850360029,34.65266064987385],[-90.58817516985386,34.61958184318887],[-90.5627103605936,34.57840016948098],[-90.5413546861914,34.54918936449755],[-90.56001735689888,34.529120560419145],[-90.58174356120296,34.5113231559394],[-90.58934416190613,34.47969954920581],[-90.58274635774114,34.453058144358444],[-90.5826210894714,34.424083138638174],[-90.6120605620799,34.39434799789557],[-90.65031937165269,34.38118972705718],[-90.6813479127948,34.37019692326694],[-90.7138557213934,34.36440518783131],[-90.76271360118825,34.36210091815817],[-90.74129619276307,34.31548511038894],[-90.75879539426066,34.27237996746682],[-90.79258240382384,34.276533367069085],[-90.82964074707175,34.27078929749903]];
+const map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/outdoors-v12',center:[-90.3, 34.85],zoom:8});
+map.addControl(new mapboxgl.NavigationControl(),'top-right');
+function addRiverLine(){if(map.getSource('river'))return;map.addSource('river',{type:'geojson',data:{type:'Feature',geometry:{type:'LineString',coordinates:riverCoords}}});map.addLayer({id:'river-glow',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':6,'line-opacity':0.3,'line-blur':2}});map.addLayer({id:'river-line',type:'line',source:'river',paint:{'line-color':'#1B4965','line-width':3,'line-opacity':0.8}})}
+const markerEls={},mapMarkers={};
+function highlightMarker(mile){document.querySelectorAll('.chapter-card.highlighted').forEach(el=>el.classList.remove('highlighted'));const card=document.getElementById('card-'+mile);if(card){card.classList.add('highlighted');const list=document.getElementById('marker-list');const cardTop=card.offsetTop-list.offsetTop;list.scrollTo({top:cardTop-list.clientHeight/3,behavior:'smooth'})}Object.keys(markerEls).forEach(k=>{const el=markerEls[k];if(k==mile){el.style.width='18px';el.style.height='18px';el.style.border='3px solid #1B4965'}else{el.style.width='12px';el.style.height='12px';el.style.border='2px solid white'}})}
+function addMarkers(){const list=document.getElementById('marker-list');list.innerHTML='';markers.forEach(m=>{const color=typeColors[m.type]||'#7f8c8d';const el=document.createElement('div');el.style.cssText='background:'+color+';width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.3);cursor:pointer;transition:all 0.2s;';markerEls[m.mile]=el;const popup=new mapboxgl.Popup({offset:10}).setHTML('<div class="popup-title">Mile '+m.mile+' '+m.bank+'</div><div class="popup-detail">'+m.name+'</div><a class="popup-link" href="http://35.188.103.101/'+m.slug+'/">Read guide &rarr;</a>');const marker=new mapboxgl.Marker(el).setLngLat([m.lng,m.lat]).setPopup(popup).addTo(map);mapMarkers[m.mile]=marker;el.addEventListener('click',()=>highlightMarker(m.mile));const card=document.createElement('div');card.className='chapter-card';card.id='card-'+m.mile;card.style.cursor='pointer';card.innerHTML='<div class="chapter-type" style="background:'+color+'22;color:'+color+';border:1px solid '+color+'44;">Mile '+m.mile+' '+m.bank+'</div><h3>'+m.name+'</h3><a href="http://35.188.103.101/'+m.slug+'/" style="font-size:12px;color:#1B4965;font-weight:600;text-decoration:none;" onclick="event.stopPropagation()">Read guide &rarr;</a>';card.addEventListener('click',()=>{map.flyTo({center:[m.lng,m.lat],zoom:12,duration:1200});Object.values(mapMarkers).forEach(mk=>{if(mk.getPopup().isOpen())mk.togglePopup()});marker.togglePopup();highlightMarker(m.mile)});list.appendChild(card)})}
+map.on('load',()=>{addRiverLine();addMarkers()});
+document.getElementById('btn-terrain').onclick=()=>{map.setStyle('mapbox://styles/mapbox/outdoors-v12');setActive('btn-terrain');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+document.getElementById('btn-satellite').onclick=()=>{map.setStyle('mapbox://styles/mapbox/satellite-streets-v12');setActive('btn-satellite');map.once('style.load',()=>{addRiverLine();addMarkers()})};
+function setActive(id){document.querySelectorAll('.map-style-toggle button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active')}
+</script>
+</body>
+</html>

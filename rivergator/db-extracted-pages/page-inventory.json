@@ -1,0 +1,602 @@
+[
+  {
+    "id": "3070",
+    "title": "About Us",
+    "slug": "about-us",
+    "path": "/about-us",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 3120,
+    "raw_chars": 8867
+  },
+  {
+    "id": "3158",
+    "title": "Book Shop",
+    "slug": "book-shop",
+    "path": "/book-shop",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 688,
+    "raw_chars": 6457
+  },
+  {
+    "id": "16",
+    "title": "Buy Online",
+    "slug": "buy-online",
+    "path": "/buy-online",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 0,
+    "raw_chars": 0
+  },
+  {
+    "id": "8",
+    "title": "Cart",
+    "slug": "cart",
+    "path": "/cart",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 34,
+    "raw_chars": 5151
+  },
+  {
+    "id": "9",
+    "title": "Checkout",
+    "slug": "checkout",
+    "path": "/checkout",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 42,
+    "raw_chars": 5193
+  },
+  {
+    "id": "20",
+    "title": "Contact Us",
+    "slug": "contact-us",
+    "path": "/contact-us",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 644,
+    "raw_chars": 5803
+  },
+  {
+    "id": "2836",
+    "title": "Map Shop",
+    "slug": "map-shop",
+    "path": "/map-shop",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 522,
+    "raw_chars": 6737
+  },
+  {
+    "id": "10",
+    "title": "My account",
+    "slug": "my-account",
+    "path": "/my-account",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 24,
+    "raw_chars": 67
+  },
+  {
+    "id": "2469",
+    "title": "Paddler's Guide",
+    "slug": "paddlers-guide",
+    "path": "/paddlers-guide",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 0,
+    "raw_chars": 0
+  },
+  {
+    "id": "3",
+    "title": "Privacy Policy",
+    "slug": "privacy-policy",
+    "path": "/privacy-policy",
+    "status": "draft",
+    "parent_id": "0",
+    "content_chars": 3641,
+    "raw_chars": 5241
+  },
+  {
+    "id": "7723",
+    "title": "Refund and Returns Policy",
+    "slug": "refund_returns",
+    "path": "/refund_returns",
+    "status": "draft",
+    "parent_id": "0",
+    "content_chars": 3331,
+    "raw_chars": 5149
+  },
+  {
+    "id": "2476",
+    "title": "Resources",
+    "slug": "resources",
+    "path": "/resources",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 184,
+    "raw_chars": 7230
+  },
+  {
+    "id": "4222",
+    "title": "River Log",
+    "slug": "river-log",
+    "path": "/river-log",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 2681,
+    "raw_chars": 4630
+  },
+  {
+    "id": "2834",
+    "title": "River Media",
+    "slug": "river-media",
+    "path": "/river-media",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 43,
+    "raw_chars": 5759
+  },
+  {
+    "id": "7",
+    "title": "Shop",
+    "slug": "shop",
+    "path": "/shop",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 23,
+    "raw_chars": 4932
+  },
+  {
+    "id": "3074",
+    "title": "Subscribe",
+    "slug": "subscribe",
+    "path": "/subscribe",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 0,
+    "raw_chars": 0
+  },
+  {
+    "id": "24",
+    "title": "Terms of Service",
+    "slug": "terms-of-service",
+    "path": "/terms-of-service",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 3440,
+    "raw_chars": 7227
+  },
+  {
+    "id": "2416",
+    "title": "Home",
+    "slug": "winery-home",
+    "path": "/winery-home",
+    "status": "publish",
+    "parent_id": "0",
+    "content_chars": 7569,
+    "raw_chars": 53840
+  },
+  {
+    "id": "2474",
+    "title": "Foreword",
+    "slug": "foreword",
+    "path": "/paddlers-guide/foreword",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 3270,
+    "raw_chars": 10672
+  },
+  {
+    "id": "2487",
+    "title": "How to Paddle the Big River",
+    "slug": "how-to-paddle-the-big-river",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 329,
+    "raw_chars": 6128
+  },
+  {
+    "id": "2472",
+    "title": "Introduction",
+    "slug": "introduction",
+    "path": "/paddlers-guide/introduction",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 4475,
+    "raw_chars": 11829
+  },
+  {
+    "id": "3280",
+    "title": "Phytoplankton",
+    "slug": "phytoplankton",
+    "path": "/paddlers-guide/phytoplankton",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 7620,
+    "raw_chars": 12649
+  },
+  {
+    "id": "2491",
+    "title": "River Index",
+    "slug": "river-guide",
+    "path": "/paddlers-guide/river-guide",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 595,
+    "raw_chars": 8648
+  },
+  {
+    "id": "2512",
+    "title": "Safety",
+    "slug": "safety",
+    "path": "/paddlers-guide/safety",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 21200,
+    "raw_chars": 28790
+  },
+  {
+    "id": "2489",
+    "title": "When to Paddle the Big River",
+    "slug": "when-to-paddle-the-big-river",
+    "path": "/paddlers-guide/when-to-paddle-the-big-river",
+    "status": "publish",
+    "parent_id": "2469",
+    "content_chars": 0,
+    "raw_chars": 0
+  },
+  {
+    "id": "2846",
+    "title": "Essential Paddler's Links",
+    "slug": "essential-paddlers-links",
+    "path": "/resources/essential-paddlers-links",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 1185,
+    "raw_chars": 8308
+  },
+  {
+    "id": "2848",
+    "title": "Helpful Links for Paddlers",
+    "slug": "helpful-links-for-paddlers",
+    "path": "/resources/helpful-links-for-paddlers",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 106,
+    "raw_chars": 6063
+  },
+  {
+    "id": "2850",
+    "title": "Leave No Trace",
+    "slug": "leave-no-trace",
+    "path": "/resources/leave-no-trace",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 1908,
+    "raw_chars": 7889
+  },
+  {
+    "id": "2852",
+    "title": "Lower Mississippi River Dispatch",
+    "slug": "lower-mississippi-river-dispatch",
+    "path": "/resources/lower-mississippi-river-dispatch",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 2403,
+    "raw_chars": 15900
+  },
+  {
+    "id": "2854",
+    "title": "Maps",
+    "slug": "maps",
+    "path": "/resources/maps",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 1037,
+    "raw_chars": 13317
+  },
+  {
+    "id": "2856",
+    "title": "News",
+    "slug": "news",
+    "path": "/resources/news",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 1052,
+    "raw_chars": 9244
+  },
+  {
+    "id": "2866",
+    "title": "Press Kit",
+    "slug": "press-kit",
+    "path": "/resources/press-kit",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 615,
+    "raw_chars": 7133
+  },
+  {
+    "id": "2858",
+    "title": "Water Trails in Louisiana",
+    "slug": "water-trails-in-louisiana",
+    "path": "/resources/water-trails-in-louisiana",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 14000,
+    "raw_chars": 31652
+  },
+  {
+    "id": "2860",
+    "title": "Water Trails in Mississippi",
+    "slug": "water-trails-in-mississippi",
+    "path": "/resources/water-trails-in-mississippi",
+    "status": "publish",
+    "parent_id": "2476",
+    "content_chars": 1975,
+    "raw_chars": 9520
+  },
+  {
+    "id": "2948",
+    "title": "Beginner's Options",
+    "slug": "beginners-options",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/beginners-options",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 1973,
+    "raw_chars": 8252
+  },
+  {
+    "id": "2950",
+    "title": "Forecasting and Monitoring River Levels",
+    "slug": "forecasting-and-monitoring-river-levels",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/forecasting-and-monitoring-river-levels",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 6684,
+    "raw_chars": 11810
+  },
+  {
+    "id": "2952",
+    "title": "Main Channel vs. Back Channel",
+    "slug": "main-channel-vs-back-channel",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/main-channel-vs-back-channel",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 7548,
+    "raw_chars": 16070
+  },
+  {
+    "id": "2954",
+    "title": "Monitoring River Rise with a Stick",
+    "slug": "monitoring-river-rise-with-a-stick",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/monitoring-river-rise-with-a-stick",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 2528,
+    "raw_chars": 7542
+  },
+  {
+    "id": "2956",
+    "title": "Options for Moderate (Intermediate) Paddlers",
+    "slug": "options-for-moderate-intermediate-paddlers",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/options-for-moderate-intermediate-paddlers",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 5516,
+    "raw_chars": 12647
+  },
+  {
+    "id": "2958",
+    "title": "Paddling Through a Lock and Dam",
+    "slug": "paddling-through-a-lock-and-dam",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/paddling-through-a-lock-and-dam",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 5253,
+    "raw_chars": 11861
+  },
+  {
+    "id": "2960",
+    "title": "Safe Travel Through a Notched or Overtopped Back Channel Dike",
+    "slug": "safe-travel-through-a-notched-or-overtopped-back-channel-dike",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/safe-travel-through-a-notched-or-overtopped-back-channel-dike",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 4833,
+    "raw_chars": 9904
+  },
+  {
+    "id": "2962",
+    "title": "What Color is the Mississippi?",
+    "slug": "what-color-is-the-mississippi",
+    "path": "/paddlers-guide/how-to-paddle-the-big-river/what-color-is-the-mississippi",
+    "status": "publish",
+    "parent_id": "2487",
+    "content_chars": 6656,
+    "raw_chars": 11711
+  },
+  {
+    "id": "2496",
+    "title": "Canoe Self Rescue",
+    "slug": "canoe-self-rescue",
+    "path": "/paddlers-guide/safety/canoe-self-rescue",
+    "status": "publish",
+    "parent_id": "2512",
+    "content_chars": 13379,
+    "raw_chars": 20253
+  },
+  {
+    "id": "2498",
+    "title": "Kayak Self Rescue",
+    "slug": "kayak-self-rescue",
+    "path": "/paddlers-guide/safety/kayak-self-rescue",
+    "status": "publish",
+    "parent_id": "2512",
+    "content_chars": 14818,
+    "raw_chars": 21683
+  },
+  {
+    "id": "2500",
+    "title": "Paddle Signals",
+    "slug": "paddle-signals",
+    "path": "/paddlers-guide/safety/paddle-signals",
+    "status": "publish",
+    "parent_id": "2512",
+    "content_chars": 597,
+    "raw_chars": 7285
+  },
+  {
+    "id": "2503",
+    "title": "SUP Self Rescue",
+    "slug": "sup-self-rescue",
+    "path": "/paddlers-guide/safety/sup-self-rescue",
+    "status": "publish",
+    "parent_id": "2512",
+    "content_chars": 3512,
+    "raw_chars": 10184
+  },
+  {
+    "id": "2505",
+    "title": "Whistle Signals",
+    "slug": "whistle-signals",
+    "path": "/paddlers-guide/safety/whistle-signals",
+    "status": "publish",
+    "parent_id": "2512",
+    "content_chars": 495,
+    "raw_chars": 7199
+  },
+  {
+    "id": "7598",
+    "title": "2017 Celebratory Expedition",
+    "slug": "2017-celebratory-expedition",
+    "path": "/river-media/2017-celebratory-expedition",
+    "status": "publish",
+    "parent_id": "2834",
+    "content_chars": 3573,
+    "raw_chars": 11196
+  },
+  {
+    "id": "3058",
+    "title": "River Photo Gallery",
+    "slug": "river-photo-gallery",
+    "path": "/river-media/river-photo-gallery",
+    "status": "publish",
+    "parent_id": "2834",
+    "content_chars": 14564,
+    "raw_chars": 129269
+  },
+  {
+    "id": "3060",
+    "title": "River Video",
+    "slug": "river-video",
+    "path": "/river-media/river-video",
+    "status": "publish",
+    "parent_id": "2834",
+    "content_chars": 209,
+    "raw_chars": 8381
+  },
+  {
+    "id": "3272",
+    "title": "Experts",
+    "slug": "experts",
+    "path": "/about-us/experts",
+    "status": "publish",
+    "parent_id": "3070",
+    "content_chars": 4638,
+    "raw_chars": 10691
+  },
+  {
+    "id": "7521",
+    "title": "Atchafalaya River",
+    "slug": "atchafalaya-river",
+    "path": "/river-log/atchafalaya-river",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 17,
+    "raw_chars": 922
+  },
+  {
+    "id": "7524",
+    "title": "Baton Rouge to Venice",
+    "slug": "baton-rouge-to-venice",
+    "path": "/river-log/baton-rouge-to-venice",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 21,
+    "raw_chars": 926
+  },
+  {
+    "id": "7526",
+    "title": "Birdsfoot Delta",
+    "slug": "birdsfoot-delta",
+    "path": "/river-log/birdsfoot-delta",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 15,
+    "raw_chars": 920
+  },
+  {
+    "id": "7506",
+    "title": "Caruthersville to Memphis",
+    "slug": "caruthersville-to-memphis",
+    "path": "/river-log/caruthersville-to-memphis",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 25,
+    "raw_chars": 661
+  },
+  {
+    "id": "7515",
+    "title": "Greenville to Vicksburg",
+    "slug": "greenville-to-vicksburg",
+    "path": "/river-log/greenville-to-vicksburg",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 23,
+    "raw_chars": 666
+  },
+  {
+    "id": "7512",
+    "title": "Helena to Greenville",
+    "slug": "helena-to-greenville",
+    "path": "/river-log/helena-to-greenville",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 20,
+    "raw_chars": 953
+  },
+  {
+    "id": "7509",
+    "title": "Memphis to Helena",
+    "slug": "memphis-to-helena",
+    "path": "/river-log/memphis-to-helena",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 17,
+    "raw_chars": 770
+  },
+  {
+    "id": "4306",
+    "title": "St. Louis to Caruthersville",
+    "slug": "stlouis-to-caruthersville",
+    "path": "/river-log/stlouis-to-caruthersville",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 27,
+    "raw_chars": 720
+  },
+  {
+    "id": "7518",
+    "title": "Vicksburg to Baton Rouge",
+    "slug": "vicksburg-to-baton-rouge",
+    "path": "/river-log/vicksburg-to-baton-rouge",
+    "status": "publish",
+    "parent_id": "4222",
+    "content_chars": 24,
+    "raw_chars": 727
+  }
+]

@@ -1,0 +1,64 @@
+============================================================
+GHOST IMPORT SUMMARY
+============================================================
+Generated:            2026-03-31 23:16:03
+Output file:          C:\Users\scott\lmrf\rivergator\ghost-import\ghost-import.json
+File size:            3.87 MB (4,056,446 bytes)
+
+--- Content ---
+Total posts/pages:    58
+  River Log posts:    38
+  Paddler's Guide:    20
+
+--- Tags ---
+Total tags:           23
+Total post-tag links: 498
+
+--- River Log Sections ---
+  St. Louis to Caruthersville: 6 chapters
+  Caruthersville to Memphis: 4 chapters
+  Memphis to Helena: 5 chapters
+  Helena to Greenville: 5 chapters
+  Greenville to Vicksburg: 3 chapters
+  Vicksburg to Baton Rouge: 5 chapters
+  Atchafalaya River: 3 chapters
+  Baton Rouge to Venice: 4 chapters
+  Birdsfoot Delta: 3 chapters
+
+--- Feature Tags (post count) ---
+  camping: 49 posts
+  hazard: 49 posts
+  access-point: 45 posts
+  island: 44 posts
+  history: 42 posts
+  dike: 42 posts
+  wildlife: 41 posts
+  tributary: 38 posts
+  lock-and-dam: 14 posts
+
+--- All Tags ---
+  [internal] #river-log
+  [internal] #chapter
+  [internal] #appendix
+  [internal] #introduction
+  [public  ] paddlers-guide
+  [public  ] stlouis-to-caruthersville
+  [public  ] caruthersville-to-memphis
+  [public  ] memphis-to-helena
+  [public  ] helena-to-greenville
+  [public  ] greenville-to-vicksburg
+  [public  ] vicksburg-to-baton-rouge
+  [public  ] atchafalaya-river
+  [public  ] baton-rouge-to-venice
+  [public  ] birdsfoot-delta
+  [public  ] camping
+  [public  ] access-point
+  [public  ] hazard
+  [public  ] wildlife
+  [public  ] history
+  [public  ] dike
+  [public  ] island
+  [public  ] tributary
+  [public  ] lock-and-dam
+
+============================================================

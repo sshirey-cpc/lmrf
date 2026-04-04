@@ -1,0 +1,737 @@
+{
+  "scraped_at": "2026-03-31T22:35:40",
+  "base_url": "https://www.rivergator.org",
+  "total_pages": 91,
+  "successful": 91,
+  "failed": 0,
+  "pages": [
+    {
+      "path": "/river-log/stlouis-to-caruthersville/stl-car-preamble",
+      "category": "river-log-content",
+      "slug": "river-log__stlouis-to-caruthersville__stl-car-preamble",
+      "status": "ok",
+      "html_bytes": 247984,
+      "text_chars": 25262
+    },
+    {
+      "path": "/river-log/stlouis-to-caruthersville/intro-st-car",
+      "category": "river-log-content",
+      "slug": "river-log__stlouis-to-caruthersville__intro-st-car",
+      "status": "ok",
+      "html_bytes": 246580,
+      "text_chars": 23367
+    },
+    {
+      "path": "/river-log/stlouis-to-caruthersville/st-louis",
+      "category": "river-log-content",
+      "slug": "river-log__stlouis-to-caruthersville__st-louis",
+      "status": "ok",
+      "html_bytes": 248475,
+      "text_chars": 21808
+    },
+    {
+      "path": "/river-log/stlouis-to-caruthersville/stl-cairo",
+      "category": "river-log-content",
+      "slug": "river-log__stlouis-to-caruthersville__stl-cairo",
+      "status": "ok",
+      "html_bytes": 246690,
+      "text_chars": 22523
+    },
+    {
+      "path": "/river-log/stlouis-to-caruthersville/cairo-caruthersville",
+      "category": "river-log-content",
+      "slug": "river-log__stlouis-to-caruthersville__cairo-caruthersville",
+      "status": "ok",
+      "html_bytes": 244800,
+      "text_chars": 20818
+    },
+    {
+      "path": "/river-log/stlouis-to-caruthersville/stl-car-appendix",
+      "category": "river-log-content",
+      "slug": "river-log__stlouis-to-caruthersville__stl-car-appendix",
+      "status": "ok",
+      "html_bytes": 245699,
+      "text_chars": 17058
+    },
+    {
+      "path": "/river-log/caruthersville-to-memphis/intro",
+      "category": "river-log-content",
+      "slug": "river-log__caruthersville-to-memphis__intro",
+      "status": "ok",
+      "html_bytes": 167014,
+      "text_chars": 8188
+    },
+    {
+      "path": "/river-log/caruthersville-to-memphis/caruthersville-to-osceola",
+      "category": "river-log-content",
+      "slug": "river-log__caruthersville-to-memphis__caruthersville-to-osceola",
+      "status": "ok",
+      "html_bytes": 167584,
+      "text_chars": 6570
+    },
+    {
+      "path": "/river-log/caruthersville-to-memphis/osceola-to-shelby-forest",
+      "category": "river-log-content",
+      "slug": "river-log__caruthersville-to-memphis__osceola-to-shelby-forest",
+      "status": "ok",
+      "html_bytes": 168649,
+      "text_chars": 7919
+    },
+    {
+      "path": "/river-log/caruthersville-to-memphis/shelby-forest-to-memphis",
+      "category": "river-log-content",
+      "slug": "river-log__caruthersville-to-memphis__shelby-forest-to-memphis",
+      "status": "ok",
+      "html_bytes": 168562,
+      "text_chars": 7354
+    },
+    {
+      "path": "/river-log/memphis-to-helena/introduction",
+      "category": "river-log-content",
+      "slug": "river-log__memphis-to-helena__introduction",
+      "status": "ok",
+      "html_bytes": 161052,
+      "text_chars": 7419
+    },
+    {
+      "path": "/river-log/memphis-to-helena/memphis-to-tunica",
+      "category": "river-log-content",
+      "slug": "river-log__memphis-to-helena__memphis-to-tunica",
+      "status": "ok",
+      "html_bytes": 166131,
+      "text_chars": 9370
+    },
+    {
+      "path": "/river-log/memphis-to-helena/tunica-to-helena",
+      "category": "river-log-content",
+      "slug": "river-log__memphis-to-helena__tunica-to-helena",
+      "status": "ok",
+      "html_bytes": 161992,
+      "text_chars": 6434
+    },
+    {
+      "path": "/river-log/memphis-to-helena/helena-to-friars",
+      "category": "river-log-content",
+      "slug": "river-log__memphis-to-helena__helena-to-friars",
+      "status": "ok",
+      "html_bytes": 160628,
+      "text_chars": 7596
+    },
+    {
+      "path": "/river-log/memphis-to-helena/appendix",
+      "category": "river-log-content",
+      "slug": "river-log__memphis-to-helena__appendix",
+      "status": "ok",
+      "html_bytes": 158990,
+      "text_chars": 6584
+    },
+    {
+      "path": "/river-log/helena-to-greenville/st-francis-to-helena",
+      "category": "river-log-content",
+      "slug": "river-log__helena-to-greenville__st-francis-to-helena",
+      "status": "ok",
+      "html_bytes": 170331,
+      "text_chars": 9324
+    },
+    {
+      "path": "/river-log/helena-to-greenville/helena-to-island-63",
+      "category": "river-log-content",
+      "slug": "river-log__helena-to-greenville__helena-to-island-63",
+      "status": "ok",
+      "html_bytes": 174817,
+      "text_chars": 11444
+    },
+    {
+      "path": "/river-log/helena-to-greenville/island-63-to-hurricane",
+      "category": "river-log-content",
+      "slug": "river-log__helena-to-greenville__island-63-to-hurricane",
+      "status": "ok",
+      "html_bytes": 176191,
+      "text_chars": 12013
+    },
+    {
+      "path": "/river-log/helena-to-greenville/hurricane-to-rosedale",
+      "category": "river-log-content",
+      "slug": "river-log__helena-to-greenville__hurricane-to-rosedale",
+      "status": "ok",
+      "html_bytes": 175354,
+      "text_chars": 11583
+    },
+    {
+      "path": "/river-log/helena-to-greenville/rosedale-to-arkansas-city",
+      "category": "river-log-content",
+      "slug": "river-log__helena-to-greenville__rosedale-to-arkansas-city",
+      "status": "ok",
+      "html_bytes": 170997,
+      "text_chars": 8996
+    },
+    {
+      "path": "/river-log/helena-to-greenville/addendum",
+      "category": "river-log-content",
+      "slug": "river-log__helena-to-greenville__addendum",
+      "status": "ok",
+      "html_bytes": 163146,
+      "text_chars": 4841
+    },
+    {
+      "path": "/river-log/greenville-to-vicksburg/introductionGtoV",
+      "category": "river-log-content",
+      "slug": "river-log__greenville-to-vicksburg__introductionGtoV",
+      "status": "ok",
+      "html_bytes": 157685,
+      "text_chars": 6479
+    },
+    {
+      "path": "/river-log/greenville-to-vicksburg/greenville-to-lake-providence",
+      "category": "river-log-content",
+      "slug": "river-log__greenville-to-vicksburg__greenville-to-lake-providence",
+      "status": "ok",
+      "html_bytes": 158079,
+      "text_chars": 6343
+    },
+    {
+      "path": "/river-log/greenville-to-vicksburg/lake-providence-to-vicksburg",
+      "category": "river-log-content",
+      "slug": "river-log__greenville-to-vicksburg__lake-providence-to-vicksburg",
+      "status": "ok",
+      "html_bytes": 159166,
+      "text_chars": 5888
+    },
+    {
+      "path": "/river-log/greenville-to-vicksburg/appendixABCD",
+      "category": "river-log-content",
+      "slug": "river-log__greenville-to-vicksburg__appendixABCD",
+      "status": "ok",
+      "html_bytes": 150770,
+      "text_chars": 3393
+    },
+    {
+      "path": "/river-log/vicksburg-to-baton-rouge/introV-B",
+      "category": "river-log-content",
+      "slug": "river-log__vicksburg-to-baton-rouge__introV-B",
+      "status": "ok",
+      "html_bytes": 222428,
+      "text_chars": 17874
+    },
+    {
+      "path": "/river-log/vicksburg-to-baton-rouge/vicksburg-to-natchez",
+      "category": "river-log-content",
+      "slug": "river-log__vicksburg-to-baton-rouge__vicksburg-to-natchez",
+      "status": "ok",
+      "html_bytes": 224735,
+      "text_chars": 18006
+    },
+    {
+      "path": "/river-log/vicksburg-to-baton-rouge/natchez-to-stfrancisville",
+      "category": "river-log-content",
+      "slug": "river-log__vicksburg-to-baton-rouge__natchez-to-stfrancisville",
+      "status": "ok",
+      "html_bytes": 223309,
+      "text_chars": 17725
+    },
+    {
+      "path": "/river-log/vicksburg-to-baton-rouge/stfrancisville-to-baton-rouge",
+      "category": "river-log-content",
+      "slug": "river-log__vicksburg-to-baton-rouge__stfrancisville-to-baton-rouge",
+      "status": "ok",
+      "html_bytes": 226579,
+      "text_chars": 18334
+    },
+    {
+      "path": "/river-log/vicksburg-to-baton-rouge/appendixV-B",
+      "category": "river-log-content",
+      "slug": "river-log__vicksburg-to-baton-rouge__appendixV-B",
+      "status": "ok",
+      "html_bytes": 220913,
+      "text_chars": 12636
+    },
+    {
+      "path": "/river-log/atchafalaya-river/atchafalaya_upper",
+      "category": "river-log-content",
+      "slug": "river-log__atchafalaya-river__atchafalaya_upper",
+      "status": "ok",
+      "html_bytes": 226963,
+      "text_chars": 16331
+    },
+    {
+      "path": "/river-log/atchafalaya-river/atchafalaya_lower",
+      "category": "river-log-content",
+      "slug": "river-log__atchafalaya-river__atchafalaya_lower",
+      "status": "ok",
+      "html_bytes": 225070,
+      "text_chars": 19183
+    },
+    {
+      "path": "/river-log/atchafalaya-river/appendixAR",
+      "category": "river-log-content",
+      "slug": "river-log__atchafalaya-river__appendixAR",
+      "status": "ok",
+      "html_bytes": 216075,
+      "text_chars": 13600
+    },
+    {
+      "path": "/river-log/baton-rouge-to-venice/introBRtoV",
+      "category": "river-log-content",
+      "slug": "river-log__baton-rouge-to-venice__introBRtoV",
+      "status": "ok",
+      "html_bytes": 263664,
+      "text_chars": 24429
+    },
+    {
+      "path": "/river-log/baton-rouge-to-venice/baton-rouge-to-new-orleans",
+      "category": "river-log-content",
+      "slug": "river-log__baton-rouge-to-venice__baton-rouge-to-new-orleans",
+      "status": "ok",
+      "html_bytes": 277322,
+      "text_chars": 23586
+    },
+    {
+      "path": "/river-log/baton-rouge-to-venice/new-orleans-to-venice",
+      "category": "river-log-content",
+      "slug": "river-log__baton-rouge-to-venice__new-orleans-to-venice",
+      "status": "ok",
+      "html_bytes": 266219,
+      "text_chars": 26549
+    },
+    {
+      "path": "/river-log/baton-rouge-to-venice/appendixBR-V",
+      "category": "river-log-content",
+      "slug": "river-log__baton-rouge-to-venice__appendixBR-V",
+      "status": "ok",
+      "html_bytes": 257497,
+      "text_chars": 18069
+    },
+    {
+      "path": "/river-log/birdsfoot-delta/introBD",
+      "category": "river-log-content",
+      "slug": "river-log__birdsfoot-delta__introBD",
+      "status": "ok",
+      "html_bytes": 166066,
+      "text_chars": 8365
+    },
+    {
+      "path": "/river-log/birdsfoot-delta/venice-to-gulf",
+      "category": "river-log-content",
+      "slug": "river-log__birdsfoot-delta__venice-to-gulf",
+      "status": "ok",
+      "html_bytes": 168339,
+      "text_chars": 8599
+    },
+    {
+      "path": "/river-log/birdsfoot-delta/appendixBD",
+      "category": "river-log-content",
+      "slug": "river-log__birdsfoot-delta__appendixBD",
+      "status": "ok",
+      "html_bytes": 161836,
+      "text_chars": 4170
+    },
+    {
+      "path": "/river-log/",
+      "category": "river-log-section",
+      "slug": "river-log",
+      "status": "ok",
+      "html_bytes": 131906,
+      "text_chars": 2799
+    },
+    {
+      "path": "/river-log/stlouis-to-caruthersville/",
+      "category": "river-log-section",
+      "slug": "river-log__stlouis-to-caruthersville",
+      "status": "ok",
+      "html_bytes": 237835,
+      "text_chars": 15583
+    },
+    {
+      "path": "/river-log/caruthersville-to-memphis/",
+      "category": "river-log-section",
+      "slug": "river-log__caruthersville-to-memphis",
+      "status": "ok",
+      "html_bytes": 160974,
+      "text_chars": 4643
+    },
+    {
+      "path": "/river-log/memphis-to-helena/",
+      "category": "river-log-section",
+      "slug": "river-log__memphis-to-helena",
+      "status": "ok",
+      "html_bytes": 155417,
+      "text_chars": 4073
+    },
+    {
+      "path": "/river-log/helena-to-greenville/",
+      "category": "river-log-section",
+      "slug": "river-log__helena-to-greenville",
+      "status": "ok",
+      "html_bytes": 164502,
+      "text_chars": 4863
+    },
+    {
+      "path": "/river-log/greenville-to-vicksburg/",
+      "category": "river-log-section",
+      "slug": "river-log__greenville-to-vicksburg",
+      "status": "ok",
+      "html_bytes": 151674,
+      "text_chars": 3418
+    },
+    {
+      "path": "/river-log/vicksburg-to-baton-rouge/",
+      "category": "river-log-section",
+      "slug": "river-log__vicksburg-to-baton-rouge",
+      "status": "ok",
+      "html_bytes": 214335,
+      "text_chars": 11577
+    },
+    {
+      "path": "/river-log/atchafalaya-river/",
+      "category": "river-log-section",
+      "slug": "river-log__atchafalaya-river",
+      "status": "ok",
+      "html_bytes": 211645,
+      "text_chars": 12109
+    },
+    {
+      "path": "/river-log/baton-rouge-to-venice/",
+      "category": "river-log-section",
+      "slug": "river-log__baton-rouge-to-venice",
+      "status": "ok",
+      "html_bytes": 250469,
+      "text_chars": 17011
+    },
+    {
+      "path": "/river-log/birdsfoot-delta/",
+      "category": "river-log-section",
+      "slug": "river-log__birdsfoot-delta",
+      "status": "ok",
+      "html_bytes": 148993,
+      "text_chars": 3106
+    },
+    {
+      "path": "/paddlers-guide/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide",
+      "status": "ok",
+      "html_bytes": 135483,
+      "text_chars": 4554
+    },
+    {
+      "path": "/paddlers-guide/introduction/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__introduction",
+      "status": "ok",
+      "html_bytes": 135483,
+      "text_chars": 4554
+    },
+    {
+      "path": "/paddlers-guide/foreword/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__foreword",
+      "status": "ok",
+      "html_bytes": 134328,
+      "text_chars": 3388
+    },
+    {
+      "path": "/paddlers-guide/river-guide/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__river-guide",
+      "status": "ok",
+      "html_bytes": 133110,
+      "text_chars": 687
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river",
+      "status": "ok",
+      "html_bytes": 131993,
+      "text_chars": 433
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/beginners-options/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__beginners-options",
+      "status": "ok",
+      "html_bytes": 134323,
+      "text_chars": 2085
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/forecasting-and-monitoring-river-levels/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__forecasting-and-monitoring-river-levels",
+      "status": "ok",
+      "html_bytes": 138411,
+      "text_chars": 6785
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/main-channel-vs-back-channel/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__main-channel-vs-back-channel",
+      "status": "ok",
+      "html_bytes": 142690,
+      "text_chars": 7650
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/monitoring-river-rise-with-a-stick/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__monitoring-river-rise-with-a-stick",
+      "status": "ok",
+      "html_bytes": 133838,
+      "text_chars": 2653
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/options-for-moderate-intermediate-paddlers/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__options-for-moderate-intermediate-paddlers",
+      "status": "ok",
+      "html_bytes": 139102,
+      "text_chars": 5661
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/paddling-through-a-lock-and-dam/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__paddling-through-a-lock-and-dam",
+      "status": "ok",
+      "html_bytes": 138161,
+      "text_chars": 5381
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/safe-travel-through-a-notched-or-overtopped-back-channel-dike/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__safe-travel-through-a-notched-or-overtopped-back-channel-dike",
+      "status": "ok",
+      "html_bytes": 136817,
+      "text_chars": 4973
+    },
+    {
+      "path": "/paddlers-guide/how-to-paddle-the-big-river/what-color-is-the-mississippi/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__how-to-paddle-the-big-river__what-color-is-the-mississippi",
+      "status": "ok",
+      "html_bytes": 138179,
+      "text_chars": 6781
+    },
+    {
+      "path": "/paddlers-guide/safety/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__safety",
+      "status": "ok",
+      "html_bytes": 153460,
+      "text_chars": 21454
+    },
+    {
+      "path": "/paddlers-guide/safety/canoe-self-rescue/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__safety__canoe-self-rescue",
+      "status": "ok",
+      "html_bytes": 144625,
+      "text_chars": 13616
+    },
+    {
+      "path": "/paddlers-guide/safety/kayak-self-rescue/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__safety__kayak-self-rescue",
+      "status": "ok",
+      "html_bytes": 146266,
+      "text_chars": 15071
+    },
+    {
+      "path": "/paddlers-guide/safety/paddle-signals/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__safety__paddle-signals",
+      "status": "ok",
+      "html_bytes": 131455,
+      "text_chars": 687
+    },
+    {
+      "path": "/paddlers-guide/safety/sup-self-rescue/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__safety__sup-self-rescue",
+      "status": "ok",
+      "html_bytes": 134457,
+      "text_chars": 3638
+    },
+    {
+      "path": "/paddlers-guide/safety/whistle-signals/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__safety__whistle-signals",
+      "status": "ok",
+      "html_bytes": 131315,
+      "text_chars": 599
+    },
+    {
+      "path": "/paddlers-guide/phytoplankton/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__phytoplankton",
+      "status": "ok",
+      "html_bytes": 137199,
+      "text_chars": 7791
+    },
+    {
+      "path": "/paddlers-guide/when-to-paddle-the-big-river/",
+      "category": "paddlers-guide",
+      "slug": "paddlers-guide__when-to-paddle-the-big-river",
+      "status": "ok",
+      "html_bytes": 127788,
+      "text_chars": 95
+    },
+    {
+      "path": "/",
+      "category": "other",
+      "slug": "home",
+      "status": "ok",
+      "html_bytes": 161221,
+      "text_chars": 6718
+    },
+    {
+      "path": "/about-us/",
+      "category": "other",
+      "slug": "about-us",
+      "status": "ok",
+      "html_bytes": 134350,
+      "text_chars": 3198
+    },
+    {
+      "path": "/about-us/experts/",
+      "category": "other",
+      "slug": "about-us__experts",
+      "status": "ok",
+      "html_bytes": 136588,
+      "text_chars": 4733
+    },
+    {
+      "path": "/resources/",
+      "category": "other",
+      "slug": "resources",
+      "status": "ok",
+      "html_bytes": 130065,
+      "text_chars": 271
+    },
+    {
+      "path": "/resources/essential-paddlers-links/",
+      "category": "other",
+      "slug": "resources__essential-paddlers-links",
+      "status": "ok",
+      "html_bytes": 133099,
+      "text_chars": 1261
+    },
+    {
+      "path": "/resources/helpful-links-for-paddlers/",
+      "category": "other",
+      "slug": "resources__helpful-links-for-paddlers",
+      "status": "ok",
+      "html_bytes": 130290,
+      "text_chars": 203
+    },
+    {
+      "path": "/resources/leave-no-trace/",
+      "category": "other",
+      "slug": "resources__leave-no-trace",
+      "status": "ok",
+      "html_bytes": 132193,
+      "text_chars": 2011
+    },
+    {
+      "path": "/resources/lower-mississippi-river-dispatch/",
+      "category": "other",
+      "slug": "resources__lower-mississippi-river-dispatch",
+      "status": "ok",
+      "html_bytes": 141593,
+      "text_chars": 2563
+    },
+    {
+      "path": "/resources/maps/",
+      "category": "other",
+      "slug": "resources__maps",
+      "status": "ok",
+      "html_bytes": 138372,
+      "text_chars": 1153
+    },
+    {
+      "path": "/resources/news/",
+      "category": "other",
+      "slug": "resources__news",
+      "status": "ok",
+      "html_bytes": 133536,
+      "text_chars": 1149
+    },
+    {
+      "path": "/resources/water-trails-in-louisiana/",
+      "category": "other",
+      "slug": "resources__water-trails-in-louisiana",
+      "status": "ok",
+      "html_bytes": 157872,
+      "text_chars": 14174
+    },
+    {
+      "path": "/resources/water-trails-in-mississippi/",
+      "category": "other",
+      "slug": "resources__water-trails-in-mississippi",
+      "status": "ok",
+      "html_bytes": 135256,
+      "text_chars": 2125
+    },
+    {
+      "path": "/resources/press-kit/",
+      "category": "other",
+      "slug": "resources__press-kit",
+      "status": "ok",
+      "html_bytes": 132380,
+      "text_chars": 698
+    },
+    {
+      "path": "/river-media/",
+      "category": "other",
+      "slug": "river-media",
+      "status": "ok",
+      "html_bytes": 129496,
+      "text_chars": 125
+    },
+    {
+      "path": "/river-media/river-photo-gallery/",
+      "category": "other",
+      "slug": "river-media__river-photo-gallery",
+      "status": "ok",
+      "html_bytes": 161222,
+      "text_chars": 3411
+    },
+    {
+      "path": "/river-media/river-video/",
+      "category": "other",
+      "slug": "river-media__river-video",
+      "status": "ok",
+      "html_bytes": 132586,
+      "text_chars": 293
+    },
+    {
+      "path": "/river-media/2017-celebratory-expedition/",
+      "category": "other",
+      "slug": "river-media__2017-celebratory-expedition",
+      "status": "ok",
+      "html_bytes": 134799,
+      "text_chars": 3680
+    },
+    {
+      "path": "/contact-us/",
+      "category": "other",
+      "slug": "contact-us",
+      "status": "ok",
+      "html_bytes": 130774,
+      "text_chars": 734
+    },
+    {
+      "path": "/map-shop/",
+      "category": "other",
+      "slug": "map-shop",
+      "status": "ok",
+      "html_bytes": 152143,
+      "text_chars": 1141
+    },
+    {
+      "path": "/book-shop/",
+      "category": "other",
+      "slug": "book-shop",
+      "status": "ok",
+      "html_bytes": 135041,
+      "text_chars": 922
+    }
+  ]
+}
