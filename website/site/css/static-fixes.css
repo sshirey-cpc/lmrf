@@ -326,44 +326,175 @@ body.is-mobile-overlay-active .Mobile-overlay .Mobile-overlay-menu-main {
   }
 }
 
-/* Board member rows — uniform image sizing and vertical alignment */
-.sqs-row > .sqs-col-5 .image-block-wrapper {
-  max-width: 800px;
-}
-.sqs-row > .sqs-col-5 .sqs-block-image-figure.intrinsic {
-  max-width: 800px !important;
-}
-.sqs-row > .sqs-col-6 .sqs-html-content h3 {
-  margin-top: 0;
+/* ==========================================================================
+   GLOBAL LAYOUT SYSTEM
+   One set of rules for all pages. Replaces Squarespace's float-based grid
+   with modern flexbox. Centers content, kills spacer columns, and provides
+   consistent behavior across every page.
+   ========================================================================== */
+
+/* --- 1. Center the content area on every page --- */
+.Main-content .sqs-layout {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
 }
 
-/* Fix button alignment on Programs and Summer Camps pages */
-/* All button containers should be consistently left-aligned */
-.Main-content .sqs-block-button-container {
-  text-align: left !important;
-}
-.Main-content .sqs-block-button-container--center {
-  text-align: left !important;
+/* --- 2. Flexbox rows — replace Squarespace floats --- */
+.Main-content .sqs-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  float: none !important;
+  width: 100% !important;
+  margin-bottom: 16px !important;
 }
 
-/* Mobile: stack Squarespace grid columns vertically */
+/* --- 3. Kill spacer-only columns globally ---
+   Squarespace uses empty columns (col-1, col-3, col-4) with &nbsp; to
+   fake centering. Flexbox handles centering now, so these are dead weight. */
+.Main-content .sqs-row > [class*="sqs-col"] > .sqs-block-spacer:only-child {
+  display: none !important;
+}
+/* Hide the parent column when spacer is its only child */
+.Main-content .sqs-col-1:has(> .sqs-block-spacer:only-child),
+.Main-content .sqs-col-3:has(> .sqs-block-spacer:only-child),
+.Main-content .sqs-col-4:has(> .sqs-block-spacer:only-child) {
+  display: none !important;
+}
+
+/* --- 4. Content columns — proportional flex widths ---
+   Columns with actual content keep their proportional sizes.
+   Based on Squarespace's 12-column grid ratios. */
+.Main-content .sqs-row > [class*="sqs-col"] {
+  float: none !important;
+  box-sizing: border-box !important;
+  padding: 0 12px !important;
+}
+
+/* Let columns use their native Squarespace percentage widths by default,
+   but override float with flex so they center properly */
+.Main-content .sqs-row > .sqs-col-12 { flex: 0 0 100% !important; max-width: 100% !important; }
+.Main-content .sqs-row > .sqs-col-11 { flex: 0 0 91.6667% !important; max-width: 91.6667% !important; }
+.Main-content .sqs-row > .sqs-col-10 { flex: 0 0 83.3333% !important; max-width: 83.3333% !important; }
+.Main-content .sqs-row > .sqs-col-8  { flex: 0 0 66.6667% !important; max-width: 66.6667% !important; }
+.Main-content .sqs-row > .sqs-col-6  { flex: 0 0 50% !important; max-width: 50% !important; }
+.Main-content .sqs-row > .sqs-col-5  { flex: 0 0 41.6667% !important; max-width: 41.6667% !important; }
+.Main-content .sqs-row > .sqs-col-4  { flex: 0 0 33.3333% !important; max-width: 33.3333% !important; }
+.Main-content .sqs-row > .sqs-col-3  { flex: 0 0 25% !important; max-width: 25% !important; }
+.Main-content .sqs-row > .sqs-col-2  { flex: 0 0 16.6667% !important; max-width: 16.6667% !important; }
+.Main-content .sqs-row > .sqs-col-1  { flex: 0 0 8.3333% !important; max-width: 8.3333% !important; }
+
+/* --- 5. Vertical spacing between rows (spacer blocks between rows) --- */
+.Main-content .sqs-block-spacer {
+  height: 24px !important;
+  padding: 0 !important;
+}
+.Main-content .sqs-block-spacer .sqs-block-content {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+/* --- 6. Text alignment --- */
+.Main-content .sqs-html-content h3 {
+  margin-top: 0 !important;
+}
+
+/* === Heading normalization — all page titles to 40px centered === */
+.Main-content h1,
+.Index-page-content h1 {
+  font-size: 40px !important;
+  text-align: center !important;
+  margin-top: 40px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Section sub-headers (H2 within page body) — smaller, not competing with title */
+.Main-content h2,
+.Index-page-content h2 {
+  font-size: 28px !important;
+}
+
+/* Page-title H2s (Advocate, Board Members, etc.) — match h1 styling */
+.Main-content h2[style*="font-size:2em"],
+.Main-content h2[style*="font-size: 2em"] {
+  font-size: 40px !important;
+  text-align: center !important;
+  margin-top: 40px !important;
+  margin-bottom: 24px !important;
+}
+
+/* --- 7. Images --- */
+/* Force all Squarespace images visible — override :not(.loaded){opacity:0} */
+.sqs-block-image img,
+.Index-page img,
+.BlogList-item img {
+  opacity: 1 !important;
+}
+
+/* Squarespace aspect-ratio containers */
+.sqs-image-shape-container-element.has-aspect-ratio {
+  position: relative !important;
+}
+.sqs-image-shape-container-element.has-aspect-ratio img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 1 !important;
+}
+
+/* Content-fit images (home page) */
+.sqs-image-shape-container-element.content-fit {
+  position: relative !important;
+}
+.sqs-image-shape-container-element.content-fit img {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  opacity: 1 !important;
+}
+
+/* Prevent images from overflowing their containers */
+.Main-content img,
+.mission-photo {
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+/* --- 8. Buttons — centered consistently --- */
+.Main-content .sqs-block-button-container,
+.Main-content .sqs-block-button-container--center,
+.Index-page-content .sqs-block-button-container,
+.Index-page-content .sqs-block-button-container--center {
+  text-align: center !important;
+}
+
+/* --- 9. Mobile: stack everything vertically --- */
 @media screen and (max-width: 768px) {
-  .sqs-row {
-    display: flex !important;
-    flex-wrap: wrap !important;
+  .Main-content .sqs-layout {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
-  .sqs-row > .sqs-col-4,
-  .sqs-row > .sqs-col-8,
-  .sqs-row > .sqs-col-6,
-  .sqs-row > .sqs-col-3,
-  .sqs-row > .sqs-col-2 {
-    width: 100% !important;
-    float: none !important;
+  .Main-content .sqs-row {
+    flex-direction: column !important;
+  }
+
+  .Main-content .sqs-row > [class*="sqs-col"] {
     flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
   }
 
-  /* Calendar iframe responsive */
+  /* Calendar/video iframe responsive */
   .Main-content iframe {
     max-width: 100% !important;
   }

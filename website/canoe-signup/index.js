@@ -14,7 +14,11 @@ const PROJECT_ID = "balmy-limiter-491013-a8";
 const DATASET = "lmrf_donations";
 const TABLE = "canoe_signups";
 const SENDER_EMAIL = "info@lowermsfoundation.org";
-const NOTIFY_EMAIL = "info@lowermsfoundation.org";
+const NOTIFY_EMAILS = [
+  "info@lowermsfoundation.org",
+  "driftwoodjohnnie@icloud.com",
+  "quapawceili@gmail.com",
+];
 
 const ALLOWED_ORIGINS = [
   "https://lowermsfoundation.org",
@@ -233,14 +237,16 @@ async function sendNotification(data) {
   const gmail = google.gmail({ version: "v1", auth });
   const name = `${sanitize(data.firstName)} ${sanitize(data.lastName)}`;
 
-  // 1. Internal notification
-  await sendEmail(
-    gmail,
-    NOTIFY_EMAIL,
-    `New Canoe Trip Sign-Up: ${name} - ${sanitize(data.tripDate)}`,
-    buildNotificationHtml(data),
-  );
-  console.log(`Internal notification sent for ${name}`);
+  // 1. Internal notifications
+  for (const notifyAddr of NOTIFY_EMAILS) {
+    await sendEmail(
+      gmail,
+      notifyAddr,
+      `New Canoe Trip Sign-Up: ${name} - ${sanitize(data.tripDate)}`,
+      buildNotificationHtml(data),
+    );
+  }
+  console.log(`Internal notifications sent for ${name} to ${NOTIFY_EMAILS.length} recipients`);
 
   // 2. Confirmation to the person who signed up
   const contactEmail = sanitize(data.email);
